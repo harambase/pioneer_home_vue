@@ -1,5 +1,5 @@
 <template>
-  <header class="app-header navbar">
+  <div class="sidebar-collapse">
     <div class="top-strip">
     </div>
     <nav class="navbar nav_bottom" role="navigation">
@@ -142,7 +142,7 @@
         </div>
       </div>
     </nav>
-  </header>
+  </div>
 </template>
 <script>
 

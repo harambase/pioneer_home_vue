@@ -15,7 +15,6 @@
 </template>
 
 <script>
-  import nav from '../_nav'
   import {Header as AppHeader, Footer as AppFooter, Breadcrumb} from '../components/'
 
   export default {
@@ -25,15 +24,7 @@
       AppFooter,
       Breadcrumb
     },
-    data() {
-      return {
-        nav: nav.items
-      }
-    },
     computed: {
-      itemFilter() {
-        return nav.items
-      },
       name() {
         return this.$route.name
       },
