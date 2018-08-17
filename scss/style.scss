@@ -1,12 +1,7 @@
-// Override Boostrap variables
-@import "bootstrap-variables";
-
-// Import Bootstrap source files
-@import "node_modules/bootstrap/scss/bootstrap";
-
 // Custom styles
 @import "reset";
 @import "gallery";
+@import "bootstrap";
 @import "cstyle";
 @import "custom";
 @import "pignose";
