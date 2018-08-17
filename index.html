@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PIONEER::EAS</title>
+    <title>先锋教育学校</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="创新教育 教育咨询 培训 留学"/>
+    <meta content="" name="description"/>
+    <meta content="先锋教育" name="author"/>
 
     <link rel="shortcut icon" href="/static/img/logo.png">
 
-    <script src="./static/dataTool.js"></script>
-
     <script>
-      let token = '';
 
       //MODIFY HERE BEFORE DEPLOY!
       const basePath = 'http://localhost:30000';
@@ -28,6 +28,54 @@
         return y.replace(/(y+)/g, function (v) { return x.getFullYear().toString().slice(-v.length) });
       }
 
+      function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+      }
+
+      function getStaffList() {
+        var list = '';
+        // $.ajax({
+        //   url: basePath + "/staff",
+        //   type: "GET",
+        //   async: false,
+        //   contentType: "application/json; charset=utf-8",
+        //   success: (data) => {
+        //     list = data;
+        //   }
+        // });
+        return list;
+      }
+
+      function getSchoolList() {
+        var list = '';
+        // $.ajax({
+        //   url: basePath + "/school",
+        //   type: "GET",
+        //   async: false,
+        //   contentType: "application/json; charset=utf-8",
+        //   success: (data) => {
+        //     list = data;
+        //   }
+        // });
+        return list;
+      }
+
+      function getWeCbatArticleList() {
+        var list = '';
+        // $.ajax({
+        //   url: "/wechat",
+        //   type: "GET",
+        //   async: false,
+        //   contentType: "text/plain; charset=utf-8",
+        //   success: (data) => {
+        //     list = data.article
+        //   }
+        // });
+        return list;
+      }
     </script>
   </head>
 
