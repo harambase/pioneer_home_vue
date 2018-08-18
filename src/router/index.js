@@ -7,6 +7,7 @@ import Full from '@/containers/Full'
 // Views
 import Dashboard from '@/views/Dashboard'
 import Organization from '@/views/organization/organization'
+import Wechat from '@/views/news/wechat'
 import Faculty from '@/views/organization/faculty_staff'
 import Login from '@/views/common/login'
 import Register from '@/views/common/register'
@@ -55,7 +56,11 @@ const router = new Router({
           name: '教师',
           component: Faculty,
         },
-
+        {
+          path: '/news/wechat',
+          name: '微信公众平台',
+          component: Wechat,
+        },
       ]
     },
   ]
