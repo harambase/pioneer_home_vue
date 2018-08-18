@@ -14,6 +14,8 @@ import Register from '@/views/common/register'
 import SiteMap from '@/views/common/siteMap'
 import FAQ from '@/views/contact/faq'
 import Contact from '@/views/contact/contact'
+import Admission from '@/views/opportunity/admission_guide'
+import Opportunity from '@/views/opportunity/Opportunity'
 
 Vue.use(Router);
 
@@ -72,6 +74,16 @@ const router = new Router({
           path: '/contact',
           name: '微信公众平台',
           component: Contact,
+        },
+        {
+          path: '/admission_guide',
+          name: '招生简章',
+          component: Admission,
+        },
+        {
+          path: '/opportunity',
+          name: '招聘简章',
+          component: Opportunity,
         },
       ]
     },
