@@ -51,29 +51,29 @@
 
       function getSchoolList() {
         var list = '';
-        // $.ajax({
-        //   url: basePath + "/school",
-        //   type: "GET",
-        //   async: false,
-        //   contentType: "application/json; charset=utf-8",
-        //   success: (data) => {
-        //     list = data;
-        //   }
-        // });
+        $.ajax({
+          url: basePath + "/school",
+          type: "GET",
+          async: false,
+          contentType: "application/json; charset=utf-8",
+          success: (data) => {
+            list = data;
+          }
+        });
         return list;
       }
 
       function getWeCbatArticleList() {
         var list = '';
-        // $.ajax({
-        //   url: "/wechat",
-        //   type: "GET",
-        //   async: false,
-        //   contentType: "text/plain; charset=utf-8",
-        //   success: (data) => {
-        //     list = data.article
-        //   }
-        // });
+        $.ajax({
+          url: "/wechat",
+          type: "GET",
+          async: false,
+          contentType: "text/plain; charset=utf-8",
+          success: (data) => {
+            list = data.article
+          }
+        });
         return list;
       }
     </script>

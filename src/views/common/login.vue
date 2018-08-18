@@ -43,7 +43,7 @@
 
 <script>
   import axios from 'axios'
-
+  import md5 from 'js-md5'
   export default ({
     name: 'Login',
     data() {
@@ -53,6 +53,7 @@
           password: ''
         },
         loginError: false,
+        basePath: basePath
       }
     },
     methods: {
@@ -65,8 +66,7 @@
           axios.post('/system/login', loginUser).then((response) => {
             if (response.data.code === 2001) {
               window.localStorage.setItem('access_token', response.data.data.access_token);
-              token = response.data.data.access_token;
-              this.$router.push({path: '/dashboard'})
+              window.location.replace(basePath + '/eas')
             } else {
               this.loginError = true
             }

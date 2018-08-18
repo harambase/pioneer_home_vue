@@ -2,9 +2,7 @@
   <div class="app">
     <AppHeader/>
     <div class="app-body">
-      <!--<Sidebar :navItems="itemFilter"/>-->
       <main class="main">
-        <breadcrumb :list="list"/>
         <router-view></router-view>
       </main>
     </div>

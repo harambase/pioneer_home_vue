@@ -86,24 +86,17 @@
               <small>Core Members of Organizations</small>
             </h3>
             <div class="lab-instruments">
-              <div id="parentHorizontalTab">
-                <ul class="resp-tabs-list hor_1">
-                  <li>全部 ALL</li>
-                  <li>董事会 Board of Directors</li>
-                  <li>理事会 School Council</li>
-                  <li>学生会 Student Union</li>
-                  <li>仲裁委员会 Arbitration Commission</li>
-                </ul>
-                <div class="resp-tabs-container hor_1">
+              <el-tabs v-model="activeName" type="border-card">
+                <el-tab-pane label="全部 ALL" name="first">
                   <div>
                     <div v-for="(item, index) in staffList" :key="item.id">
                       <div v-if="item.organization != '0'" class="col-md-3 jm-item first">
                         <div class="jm-item-wrapper">
                           <div class="jm-item-image">
                             <img v-if="item.id != 'lxw'"
-                                 :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                 :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
                                  :alt="item.name">
-                            <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                            <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                  :alt="item.name">
                             <span class="jm-item-overlay"> </span>
                             <div class="jm-item-button"><a
@@ -115,52 +108,33 @@
                     </div>
                     <div class="clearfix"></div>
                   </div>
+                </el-tab-pane>
+                <el-tab-pane label="董事会 Board of Directors" name="second">
                   <div>
-                    <div v-for="(item, index) in staffList" :key="item.id">
-                      <div v-if="item.organization.indexOf('1')!=-1">
-                        <div class="col-md-3 jm-item first">
-                          <div class="jm-item-wrapper">
-                            <div class="jm-item-image">
-                              <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
-                                   :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
-                                   :alt="item.name">
-                              <span class="jm-item-overlay"> </span>
-                              <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
-                              </div>
+                  <div v-for="(item, index) in staffList" :key="item.id">
+                    <div v-if="item.organization.indexOf('1')!=-1">
+                      <div class="col-md-3 jm-item first">
+                        <div class="jm-item-wrapper">
+                          <div class="jm-item-image">
+                            <img v-if="item.id != 'lxw'"
+                                 :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
+                                 :alt="item.name">
+                            <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
+                                 :alt="item.name">
+                            <span class="jm-item-overlay"> </span>
+                            <div class="jm-item-button"><a
+                              :href="'/organization/single?name=' + item.id">View</a>
                             </div>
-                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
                           </div>
+                          <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
                         </div>
                       </div>
                     </div>
-                    <div class="clearfix"></div>
                   </div>
-                  <div>
-                    <div v-for="(item, index) in staffList" :key="item.id">
-                      <div v-if="item.organization.indexOf('4')!=-1">
-                        <div class="col-md-3 jm-item first">
-                          <div class="jm-item-wrapper">
-                            <div class="jm-item-image">
-                              <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
-                                   :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
-                                   :alt="item.name">
-                              <span class="jm-item-overlay"> </span>
-                              <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
-                              </div>
-                            </div>
-                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                </el-tab-pane>
+                <el-tab-pane label="学生会 Student Union" name="fourth">
                   <div>
                     <div v-for="(item, index) in staffList" :key="item.id">
                       <div v-if="item.organization.indexOf('2')!=-1">
@@ -168,9 +142,9 @@
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
                               <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
                                    :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                              <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
@@ -184,6 +158,8 @@
                     </div>
                     <div class="clearfix"></div>
                   </div>
+                </el-tab-pane>
+                <el-tab-pane label="仲裁委员会 Arbitration Commission" name="fifth">
                   <div>
                     <div v-for="(item, index) in staffList" :key="item.id">
                       <div v-if="item.organization.indexOf('3')!=-1">
@@ -191,32 +167,9 @@
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
                               <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
                                    :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
-                                   :alt="item.name">
-                              <span class="jm-item-overlay"> </span>
-                              <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
-                              </div>
-                            </div>
-                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div>
-                    <div v-for="(item, index) in staffList" :key="item.id">
-                      <div v-if="item.organization.indexOf('5')!=-1">
-                        <div class="col-md-3 jm-item first">
-                          <div class="jm-item-wrapper">
-                            <div class="jm-item-image">
-                              <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
-                                   :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                              <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
@@ -230,52 +183,11 @@
                     </div>
                     <div class="clearfix"></div>
                   </div>
-                  <div>
-                    <div v-for="(item, index) in staffList" :key="item.id">
-                      <div v-if="item.organization.indexOf('6')!=-1">
-                        <div class="col-md-3 jm-item first">
-                          <div class="jm-item-wrapper">
-                            <div class="jm-item-image">
-                              <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
-                                   :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
-                                   :alt="item.name">
-                              <span class="jm-item-overlay"> </span>
-                              <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
-                              </div>
-                            </div>
-                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div>
-                    <div v-for="(item, index) in staffList" :key="item.id">
-                      <div v-if="item.organization.indexOf('7')!=-1">
-                        <div class="col-md-3 jm-item first">
-                          <div class="jm-item-wrapper">
-                            <div class="jm-item-image">
-                              <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
-                                   :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
-                                   :alt="item.name">
-                              <span class="jm-item-overlay"> </span>
-                              <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
-                              </div>
-                            </div>
-                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
+                </el-tab-pane>
+              </el-tabs>
+
+              <div id="parentHorizontalTab">
+                <div class="resp-tabs-container hor_1">
                 </div>
               </div>
             </div>
@@ -285,13 +197,8 @@
               <small>Core Members of Organizations</small>
             </h3>
             <div class="lab-instruments">
-              <div id="parentHorizontalTab2">
-                <ul class="resp-tabs-list hor_1">
-                  <li>教务部 Ministry of Education</li>
-                  <li>传播委员会 Communication Committee</li>
-                  <li>生活委员会 Living Committee</li>
-                </ul>
-                <div class="resp-tabs-container hor_1">
+              <el-tabs v-model="activeName2" type="border-card">
+                <el-tab-pane label="教务部 Ministry of Education" name="second">
                   <div>
                     <div v-for="(item, index) in staffList" :key="item.id">
                       <div v-if="item.organization.indexOf('5')!=-1">
@@ -299,9 +206,9 @@
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
                               <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
                                    :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                              <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
@@ -315,6 +222,8 @@
                     </div>
                     <div class="clearfix"></div>
                   </div>
+                </el-tab-pane>
+                <el-tab-pane label="传播委员会 Communication Committee" name="third">
                   <div>
                     <div v-for="(item, index) in staffList" :key="item.id">
                       <div v-if="item.organization.indexOf('6')!=-1">
@@ -322,9 +231,9 @@
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
                               <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
                                    :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                              <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
@@ -338,6 +247,8 @@
                     </div>
                     <div class="clearfix"></div>
                   </div>
+                </el-tab-pane>
+                <el-tab-pane label="生活委员会 Living Committee" name="fourth">
                   <div>
                     <div v-for="(item, index) in staffList" :key="item.id">
                       <div v-if="item.organization.indexOf('7')!=-1">
@@ -345,9 +256,9 @@
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
                               <img v-if="item.id != 'lxw'"
-                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
                                    :alt="item.name">
-                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                              <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
@@ -361,8 +272,8 @@
                     </div>
                     <div class="clearfix"></div>
                   </div>
-                </div>
-              </div>
+                </el-tab-pane>
+              </el-tabs>
             </div>
           </div>
         </div>
@@ -374,7 +285,23 @@
 </template>
 
 <script>
+  import axios from 'axios'
+
   export default {
     name: 'organization',
+    data() {
+      return {
+        staffList: [],
+        basePath: basePath,
+        activeName: 'first',
+        activeName2: 'second'
+      }
+    },
+    mounted() {
+      axios.get('/staff').then(response =>{
+        this.staffList = response.data;
+      })
+    },
+    methods: {}
   }
 </script>

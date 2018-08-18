@@ -19,7 +19,6 @@
           </ul>
           <h4>加入先锋</h4>
           <ul>
-
             <li><span>&#62;</span><a @click="$router.push({path: '/opportunity'})" href="#/opportunity">招聘信息 | Career</a></li>
             <li><span>&#62;</span><a @click="$router.push({path: '/admission_guide'})" href="#/admission_guide">招生简章 | Admission Guide</a></li>
           </ul>
