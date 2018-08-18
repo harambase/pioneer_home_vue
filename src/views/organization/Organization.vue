@@ -1,0 +1,380 @@
+<template>
+  <div class="animated fadeIn">
+    <!-- instruments-section -->
+    <section class="instruments-section">
+      <div class="inner-banner demo-2 text-center">
+        <div id="breadcrumb_wrapper">
+          <div class="container">
+            <h2>School Organizations</h2>
+            <h6>学校组织架构</h6>
+          </div>
+        </div>
+      </div>
+      <!--- instruments ---->
+      <div class="instruments" id="detail">
+        <div class="container">
+          <div class="row">
+            <h3 class="last-updated"> 学校组织架构
+              <small>Core Organizations</small>
+            </h3>
+            <div class="row">
+              <div class="col-md-4">
+                <h4>
+                  <strong>董事会</strong>
+                  <small>Board of Directors</small>
+                </h4>
+                <p>
+                  先锋学生会是自发形成的组织，以学生为服务对象，为保障学生权益而生，明确学校规章制度，改善学校学习生活环境。
+                  管理学生的事务和学术事务，对学校行政有建议权、对学校预算和支出有知情权，并参与学校的群规、校规、各区域使用底线的制定、修改与协助执行。
+                </p>
+                <p>
+                  The Pioneer Student Union is a spontaneously formed organization that serves students,
+                  protects students' rights and interests, clarifies school rules and regulations,
+                  and improves the school's learning and living environment.
+                  Also, student Union manages student affairs and academic affairs, have the right to propose school
+                  administration,
+                  and to know the school budget and expenditure, and participate in the school's QQ-group rules,
+                  school rules, the use of the bottom line in each region, modification and assistance in
+                  implementation.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h4>
+                  <strong>学生会</strong>
+                  <small>Student Union</small>
+                </h4>
+                <p>
+                  先锋学生会是自发形成的组织，以学生为服务对象，为保障学生权益而生，明确学校规章制度，改善学校学习生活环境。
+                  管理学生的事务和学术事务，对学校行政有建议权、对学校预算和支出有知情权，并参与学校的群规、校规、各区域使用底线的制定、修改与协助执行。
+                  先锋学生会的成立由全体学生投票产生。
+                </p>
+                <p>
+                  The Pioneer Student Union is a spontaneously formed organization that serves students,
+                  protects students' rights and interests, clarifies school rules and regulations,
+                  and improves the school's learning and living environment.
+                  Also, student Union manages student affairs and academic affairs, have the right to propose school
+                  administration,
+                  and to know the school budget and expenditure, and participate in the school's QQ-group rules,
+                  school rules, the use of the bottom line in each region, modification and assistance in
+                  implementation.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h4>
+                  <strong>仲裁委员会</strong>
+                  <small>Arbitration Commission</small>
+                </h4>
+                <p>
+                  保障先锋制度执行中的公平与公正，维护师生权益，建立和保障申述途径。确保仲裁的有效性和公正性，协助并监督学校执行仲裁决议。
+                  先锋仲裁委员会的负责人为：教务负责人、学生会评议会负责人和董事会负责人。
+                </p>
+                <p>
+                  The Arbitration Commission guarantees the fairness and justice in the implementation of the pioneer
+                  system, safeguard the rights and interests of teachers and students, and establish and guarantee the
+                  means of representation. Ensuring the validity and impartiality of arbitration, assisting and
+                  supervising schools in implementing arbitration decisions.
+                  The heads of the Pioneer Arbitration Committee are: the head of the academic affairs, the head of the
+                  student council, and the person in charge of the board of directors.
+                </p>
+              </div>
+            </div>
+
+            <!--Horizontal Tab-->
+          </div>
+          <div class="row" style="margin-top: 30px;">
+            <h3 class="last-updated"> 学校核心机构人员安排
+              <small>Core Members of Organizations</small>
+            </h3>
+            <div class="lab-instruments">
+              <div id="parentHorizontalTab">
+                <ul class="resp-tabs-list hor_1">
+                  <li>全部 ALL</li>
+                  <li>董事会 Board of Directors</li>
+                  <li>理事会 School Council</li>
+                  <li>学生会 Student Union</li>
+                  <li>仲裁委员会 Arbitration Commission</li>
+                </ul>
+                <div class="resp-tabs-container hor_1">
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization != '0'" class="col-md-3 jm-item first">
+                        <div class="jm-item-wrapper">
+                          <div class="jm-item-image">
+                            <img v-if="item.id != 'lxw'"
+                                 :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                 :alt="item.name">
+                            <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                 :alt="item.name">
+                            <span class="jm-item-overlay"> </span>
+                            <div class="jm-item-button"><a
+                              :href="'/organization/single?name=' + item.id">View</a></div>
+                          </div>
+                          <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('1')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('4')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('2')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('3')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('5')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('6')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('7')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 30px;">
+            <h3 class="last-updated"> 学校行政机构人员安排
+              <small>Core Members of Organizations</small>
+            </h3>
+            <div class="lab-instruments">
+              <div id="parentHorizontalTab2">
+                <ul class="resp-tabs-list hor_1">
+                  <li>教务部 Ministry of Education</li>
+                  <li>传播委员会 Communication Committee</li>
+                  <li>生活委员会 Living Committee</li>
+                </ul>
+                <div class="resp-tabs-container hor_1">
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('5')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('6')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('7')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="'/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="'/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                :href="'/organization/single?name=' + item.id">View</a>
+                              </div>
+                            </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /instruments ---->
+    </section>
+    <!-- //instruments-section -->
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'organization',
+  }
+</script>

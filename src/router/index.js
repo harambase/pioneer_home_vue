@@ -6,6 +6,7 @@ import Full from '@/containers/Full'
 
 // Views
 import Dashboard from '@/views/Dashboard'
+import Organization from '@/views/organization/Organization'
 
 Vue.use(Router)
 
@@ -24,14 +25,15 @@ const router = new Router({
           path: 'dashboard',
           name: '主页',
           component: Dashboard,
-          meta: {
-            requireAuth: true,
-            role: ['0']
-          },
+        },
+        {
+          path: 'organization',
+          name: '组织架构',
+          component: Organization,
         },
       ]
     },
   ]
-})
+});
 
 export default router

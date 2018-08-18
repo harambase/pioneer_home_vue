@@ -4,9 +4,9 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../../pioneer/src/main/resources/templates/index.html'),
+    index: path.resolve(__dirname, '../../pioneer/src/main/resources/templates/homepage.html'),
     assetsRoot: path.resolve(__dirname, '../../pioneer/src/main/resources'),
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'static/home',
     assetsPublicPath: './',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as

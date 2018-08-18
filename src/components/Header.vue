@@ -16,137 +16,181 @@
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-2">
-            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/site_map">网站地图|&nbsp;Site Map</a><br>
+            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/site_map">网站地图|&nbsp;Site
+            Map</a><br>
             <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/login">登录|&nbsp;Login</a>
           </div>
         </div>
       </div>
       <div class="row" style="background: #444; margin-top:20px;">
         <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header nav_2">
-            <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
-                    data-target="#bs-megadropdown-tabs">目录
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-            <ul class="nav navbar-nav nav_1">
-              <li><a href="/about">关于我们 <br>
+          <el-menu :default-active="activeIndex"
+                   class="navbar nav_bottom"
+                   mode="horizontal"
+                   :router="true"
+                   text-color="#bdbdbd"
+                   active-text-color="#fff"
+                   @select="handleSelect">
+            <el-menu-item index="/about">
+              <p>关于我们 <br>
                 <small>About</small>
-              </a></li>
-              <li>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">学校特色<br>
+              </p>
+            </el-menu-item>
+            <el-submenu index="4">
+              <template slot="title">
+                <p>学校特色 <br>
                   <small>Specialties</small>
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu drop_menu" role="menu">
-                  <li><a href="/liberal_arts_college">合作大学
-                    <small>Universities</small>
-                  </a></li>
-                  <li><a href="/study_by_travel">游学项目
-                    <small>Study By Travel</small>
-                  </a></li>
-                  <li><a href="/project_based_teaching">项目式教学
-                    <small>Project-based Learning</small>
-                  </a></li>
-                </ul>
-              </li>
-
-              <li><a href="/course">教学实践<br>
+                </p>
+              </template>
+              <el-menu-item index="/liberal_arts_college">
+                <p>合作大学 <br>
+                  <small>Universities</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="/study_by_travel">
+                <p>游学项目 <br>
+                  <small>Study By Trave</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="/project_based_teaching">
+                <p>项目式教学 <br>
+                  <small>Project-based Learning</small>
+                </p>
+              </el-menu-item>
+            </el-submenu>
+            <el-menu-item index="/course">
+              <p>教学实践 <br>
                 <small>Curriculum</small>
-              </a></li>
-              <li>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">团队组织<br>
+              </p>
+            </el-menu-item>
+            <el-submenu index="5">
+              <template slot="title">
+                <p>团队组织 <br>
                   <small>Teams</small>
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu drop_menu" role="menu">
-                  <li><a href="/faculty_staff">教师团队
-                    <small>Faculty & Staff</small>
-                  </a></li>
-                  <li><a href="/organization">组织架构
-                    <small>Organization</small>
-                  </a></li>
-                </ul>
-              </li>
-              <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                  全部动态 <br>
+                </p>
+              </template>
+              <el-menu-item index="/faculty_staff">
+                <p>教师团队 <br>
+                  <small>Faculty & Staff</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="/organization">
+                <p>组织架构 <br>
+                  <small>Organization</small>
+                </p>
+              </el-menu-item>
+            </el-submenu>
+            <el-submenu index="6">
+              <template slot="title">
+                <p>全部动态 <br>
                   <small>Updates</small>
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu drop_menu" role="menu">
-                  <li><a href="/news/wechat">微信公众平台
-                    <small>WeChat</small>
-                  </a></li>
-                  <li><a href="/activity">学校活动
-                    <small>Activities</small>
-                  </a></li>
-                </ul>
-              </li>
-
-              <li><a href="/achievement">教学成果 <br>
+                </p>
+              </template>
+              <el-menu-item index="/news/wechat">
+                <p>微信公众平台 <br>
+                  <small>WeChat</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="/activity">
+                <p>学校活动 <br>
+                  <small>Activities</small>
+                </p>
+              </el-menu-item>
+            </el-submenu>
+            <el-menu-item index="/achievement">
+              <p>教学成果 <br>
                 <small>Achievements</small>
-              </a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                  先锋分支 <br>
+              </p>
+            </el-menu-item>
+            <el-submenu index="7">
+              <template slot="title">
+                <p>先锋分支 <br>
                   <small>Branches</small>
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu drop_menu" role="menu">
-                  <li><a href="/elementary">小学部
-                    <small>Elementary</small>
-                  </a></li>
-                  <li><a href="https://agoraacademy.cn">深圳分校
+                </p>
+              </template>
+              <el-menu-item index="/elementary">
+                <p>小学部 <br>
+                  <small>Elementary</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="7-2">
+                <a href="https://agoraacademy.cn">
+                  <p>深圳分校 <br>
                     <small>Agora Academy</small>
-                  </a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">联系我们 <br>
-                  <small>Contact Us</small>
-                  <span class="caret"></span></a>
-                <ul class="dropdown-menu drop_menu" role="menu">
-                  <li><a href="/contact/faq">常见问题
-                    <small>FAQs</small>
-                  </a></li>
-                  <li><a href="/contact">联系信息
-                    <small>Contact Info</small>
-                  </a></li>
-                </ul>
-              </li>
-              <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                  加入先锋 <br>
-                  <small>Opportunity</small>
-                  <span class="caret"></span>
+                  </p>
                 </a>
-                <ul class="dropdown-menu drop_menu" role="menu">
-                  <li><a href="/admission_guide">招生简章
-                    <small>Admission Guide</small>
-                  </a></li>
-                  <li><a href="/opportunity">招聘信息
-                    <small>Career</small>
-                  </a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
+              </el-menu-item>
+            </el-submenu>
+            <el-submenu index="8">
+              <template slot="title">
+                <p>联系我们 <br>
+                  <small>Contact Us</small>
+                </p>
+              </template>
+              <el-menu-item index="/contact/faq">
+                <p>常见问题 <br>
+                  <small>FAQs</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="/contact">
+                <p>联系信息 <br>
+                  <small>Contact Info</small>
+                </p>
+              </el-menu-item>
+            </el-submenu>
+            <el-submenu index="9">
+              <template slot="title">
+                <p>加入先锋 <br>
+                  <small>Opportunity</small>
+                </p>
+              </template>
+              <el-menu-item index="/admission_guide">
+                <p>招生简章 <br>
+                  <small>Admission Guide</small>
+                </p>
+              </el-menu-item>
+              <el-menu-item index="/opportunity">
+                <p>招聘信息 <br>
+                  <small>Career</small>
+                </p>
+              </el-menu-item>
+            </el-submenu>
+          </el-menu>
         </div>
       </div>
     </nav>
   </div>
 </template>
+<!--<style>-->
+
+  <!--.el-menu-item p, .el-submenu__title p {-->
+    <!--padding: 0 !important;-->
+    <!--text-align: center;-->
+    <!--font-weight: 400;-->
+    <!--font-size: 14px;-->
+    <!--margin: 10px 10px;-->
+    <!--line-height: 20px;-->
+    <!--text-transform: uppercase;-->
+    <!--letter-spacing: 1px;-->
+    <!--font-family: 'Roboto Condensed', sans-serif;-->
+  <!--}-->
+<!--</style>-->
+
 <script>
 
   export default {
     name: 'c-header',
+
+    data() {
+      return {
+        activeIndex: "1",
+      }
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        console.log(key);
+        console.log(keyPath)
+      }
+    }
   }
 </script>

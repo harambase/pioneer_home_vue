@@ -1,66 +1,21 @@
 <template>
   <div class="animated fadeIn">
     <div class="demo-2">
-      <div id="slider" class="sl-slider-wrapper">
+      <div id="slider" class="sl-slider-wrapper sl-slide">
+        <el-carousel height="600px">
+          <el-carousel-item v-for="item in items" :key="item.id">
+            <div class="sl-slide-inner">
+              <h3>{{ item.title }}</h3>
+              <blockquote>
+                <p>{{item.description}}</p>
+                <cite>先锋教育理念 Education Principals</cite>
+              </blockquote>
+            </div>
 
+          </el-carousel-item>
+        </el-carousel>
         <div class="sl-slider">
-
-          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25"
-               data-slice1-scale="2" data-slice2-scale="2">
-            <div class="sl-slide-inner">
-              <div class="bg-img bg-img-1"></div>
-              <h3>学会做人 Good Character</h3>
-              <blockquote><p>品格教育，致力于让学生成为一个道德成熟、负责任、自律、有良好品格的人。 </p><cite>先锋教育理念 Education Principals</cite>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
-               data-slice1-scale="1.5" data-slice2-scale="1.5">
-            <div class="sl-slide-inner">
-              <div class="bg-img bg-img-2"></div>
-              <h3>学会思考 Critical Thinking</h3>
-              <blockquote><p>在思维能力中，先锋尤其强调批判性思维和创造性思维。</p><cite>先锋教育理念 Education Principals</cite></blockquote>
-            </div>
-          </div>
-
-          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
-               data-slice1-scale="2" data-slice2-scale="1">
-            <div class="sl-slide-inner">
-              <div class="bg-img bg-img-3"></div>
-              <h3>学会学习 Life-long Learning</h3>
-              <blockquote><p>。</p><cite>先锋教育理念 Education Principals</cite>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25"
-               data-slice1-scale="2" data-slice2-scale="1">
-            <div class="sl-slide-inner">
-              <div class="bg-img bg-img-4"></div>
-              <h3>学会交流 Communication </h3>
-              <blockquote><p>交流能力是一个人生存与发展的必备能力，也是决定一个人成功的必要条件。</p><cite>先锋教育理念 Education Principals</cite></blockquote>
-            </div>
-          </div>
-
-          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10"
-               data-slice1-scale="2" data-slice2-scale="1">
-            <div class="sl-slide-inner">
-              <div class="bg-img bg-img-5"></div>
-              <h3>学会合作 Collaboration</h3>
-              <blockquote><p>现在的体制教育唯成绩论，非常强调竞争，事实上过度的竞争很容易造成孩子不敢面对失败，加剧他们的自我中心倾向。</p><cite>先锋教育理念 Education Principals</cite></blockquote>
-            </div>
-          </div>
         </div><!-- /sl-slider -->
-
-        <nav id="nav-dots" class="nav-dots">
-          <span class="nav-dot-current"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </nav>
-
       </div><!-- /slider-wrapper -->
 
     </div>
@@ -74,9 +29,12 @@
             <img src="/static/images/organization/lxw_1.jpg" alt="doctor" title="doctor"/>
           </div>
           <div class="col-md-4 abt-dec">
-            <h2>刘晓伟<small>校长</small></h2>
+            <h2>刘晓伟
+              <small>校长</small>
+            </h2>
             <p class="diff">一级导师、先锋教育创始人、青少年和儿童早期教育专家、美国弗吉尼亚大学教育心理学硕士、国家心理咨询师</p>
-            <p>刘晓伟先生曾执教于四川大学，担任过北京先锋思维教育文化研究中心主任、美国教育资源文化研究中心主任、美国犹他州政府驻北京商务代表处首席代表、美国多飞公司教育顾问、上海市教委教改《信息科技》教材顾问。最早在中国幼儿园开展英语、信息科技和项目教学，有从幼儿园到大学各年龄段丰富的教研和教学经验。现任先锋教育学校校长。</p>
+            <p>
+              刘晓伟先生曾执教于四川大学，担任过北京先锋思维教育文化研究中心主任、美国教育资源文化研究中心主任、美国犹他州政府驻北京商务代表处首席代表、美国多飞公司教育顾问、上海市教委教改《信息科技》教材顾问。最早在中国幼儿园开展英语、信息科技和项目教学，有从幼儿园到大学各年龄段丰富的教研和教学经验。现任先锋教育学校校长。</p>
 
           </div>
           <div class="col-md-4 timing">
@@ -170,13 +128,16 @@
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
               <div class="list-group">
                 <a href="#" class="list-group-item active text-center">
-                  先锋的合作院校<br><small>Universities</small>
+                  先锋的合作院校<br>
+                  <small>Universities</small>
                 </a>
                 <a href="#" class="list-group-item text-center">
-                  先锋游学<br><small>Study By Travel</small>
+                  先锋游学<br>
+                  <small>Study By Travel</small>
                 </a>
                 <a href="#" class="list-group-item text-center">
-                  项目式教学<br><small>Project-based Teaching</small>
+                  项目式教学<br>
+                  <small>Project-based Teaching</small>
                 </a>
               </div>
             </div>
@@ -307,7 +268,8 @@
         <ul class="item-list g-clearfix" id="detail">
           <div v-for="(item, index) in staffList" :key="item.id">
             <div class="main-box" v-if="item.type === 'f'">
-              <a v-if="item.id != 'lxw'" target="_blank" :href="'/faculty_staff/single?name=' + item.id" class="team-icon">
+              <a v-if="item.id != 'lxw'" target="_blank" :href="'/faculty_staff/single?name=' + item.id"
+                 class="team-icon">
                 <img :src="'/static/images/organization/' + item.id +'_1.jpg'" :alt="item.name">
               </a>
               <a v-else target="_blank" :href="'/faculty_staff/single?name=' + item.id" class="team-icon">
@@ -338,6 +300,70 @@
     </div>
   </div>
 </template>
+<style>
+  .el-carousel__item h3 {
+    font-size: 70px;
+    padding: 180px 30px 10px 30px;
+    width: 80%;
+    max-width: 960px;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+  }
+
+  .el-carousel__item blockquote {
+    padding-top: 10px;
+    width: 80%;
+    max-width: 960px;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+  }
+
+  .el-carousel__item blockquote p{
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  .el-carousel__item blockquote cite {
+    font-size: 14px;
+    padding-top: 25px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+  }
+
+
+  .el-carousel__item:nth-child(3) {
+    background: url("../../static/images/5hui/1.jpg") no-repeat fixed center;
+  }
+
+  .el-carousel__item:nth-child(4) {
+    background: url("../../static/images/5hui/2.jpg") no-repeat fixed center;
+  }
+
+  .el-carousel__item:nth-child(5) {
+    background: url("../../static/images/5hui/3.jpg") no-repeat fixed center;
+  }
+
+  .el-carousel__item:nth-child(6) {
+    background: url("../../static/images/5hui/4.jpg") no-repeat fixed center;
+  }
+
+  .el-carousel__item:nth-child(7) {
+    background: url("../../static/images/5hui/5.jpg") no-repeat fixed center;
+  }
+
+</style>
 
 <script>
   import axios from 'axios'
@@ -348,6 +374,38 @@
       return {
         id: getQueryString("name"),
         staffList: getStaffList(),
+        items: [
+          {
+            id: 1,
+            title: '学会做人 Good Character',
+            description: '关于爱、包容、尊重的良好品格',
+            pic: '/static/images/1.jpg'
+          },
+          {
+            id: 2,
+            title: '学会思考 Critical Thinking',
+            description: '勇敢说不，尤其勇敢对自己说不',
+            pic: '/static/images/2.jpg'
+          },
+          {
+            id: 3,
+            title: '学会交流 Communication',
+            description: '一生具备对事物好奇探索的能力',
+            pic: '/static/images/3.jpg'
+          },
+          {
+            id: 4,
+            title: '学会做人 Good Character',
+            description: '与各式各样的人倾听沟通相处',
+            pic: '/static/images/4.jpg'
+          },
+          {
+            id: 5,
+            title: '学会合作 Collaboration',
+            description: '理解分歧、达成共识、欣赏每一个人',
+            pic: '/static/images/5.jpg'
+          }
+        ]
       }
     },
   }
