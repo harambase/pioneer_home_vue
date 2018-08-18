@@ -1,0 +1,53 @@
+<template>
+  <section class="instrument-section">
+    <div class="inner-banner demo-2 text-center">
+      <div id="breadcrumb_wrapper">
+        <div class="container">
+          <h2>Personnel</h2>
+          <h6>人员介绍</h6>
+        </div>
+      </div>
+    </div>
+    <!--- instrument ---->
+    <div class="instrument">
+      <div class="container">
+        <h3 class="last-updated"> 学校成员
+          <small>Core Member</small>
+        </h3>
+        <div class="instrument-view">
+          <div class="col-md-6 ins-image">
+            <img :src=" basePath + '/static/images/organization/' + item.id + '_1.jpg'" :title="item.name" alt=""/>
+          </div>
+          <div id="detail">
+            <div class="ins-name">
+              <h3>{{item.name}} {{item.enName}}
+                <small>{{item.jobTitle}}</small>
+              </h3>
+              <p>{{item.shortDescription}}</p>
+              <p>{{item.enDescription}}</p>
+            </div>
+            <div class="span span1">
+              <p class="left">{{item.moreInfo[0].id}}</p>
+              <p class="right">{{item.moreInfo[0].description}}</p>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clerfix"></div>
+        </div>
+      </div>
+    </div>
+    <!--- /instrument ---->
+  </section>
+</template>
+
+<script>
+  export default {
+    name: 'c-personnel',
+    props: ['item'],
+    data() {
+      return {
+        basePath: basePath,
+      }
+    }
+  }
+</script>

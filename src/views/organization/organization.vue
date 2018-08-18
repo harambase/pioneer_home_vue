@@ -1,7 +1,7 @@
 <template>
   <div class="animated fadeIn">
     <!-- instruments-section -->
-    <section class="instruments-section">
+    <section class="instruments-section" v-if="!detail">
       <div class="inner-banner demo-2 text-center">
         <div id="breadcrumb_wrapper">
           <div class="container">
@@ -11,7 +11,7 @@
         </div>
       </div>
       <!--- instruments ---->
-      <div class="instruments" id="detail">
+      <div class="instruments">
         <div class="container">
           <div class="row">
             <h3 class="last-updated"> 学校组织架构
@@ -100,7 +100,7 @@
                                  :alt="item.name">
                             <span class="jm-item-overlay"> </span>
                             <div class="jm-item-button"><a
-                              :href="'/organization/single?name=' + item.id">View</a></div>
+                              @click="doClick(item)" style="cursor:pointer;">View</a></div>
                           </div>
                           <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
                         </div>
@@ -111,28 +111,28 @@
                 </el-tab-pane>
                 <el-tab-pane label="董事会 Board of Directors" name="second">
                   <div>
-                  <div v-for="(item, index) in staffList" :key="item.id">
-                    <div v-if="item.organization.indexOf('1')!=-1">
-                      <div class="col-md-3 jm-item first">
-                        <div class="jm-item-wrapper">
-                          <div class="jm-item-image">
-                            <img v-if="item.id != 'lxw'"
-                                 :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
-                                 :alt="item.name">
-                            <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
-                                 :alt="item.name">
-                            <span class="jm-item-overlay"> </span>
-                            <div class="jm-item-button"><a
-                              :href="'/organization/single?name=' + item.id">View</a>
+                    <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-if="item.organization.indexOf('1')!=-1">
+                        <div class="col-md-3 jm-item first">
+                          <div class="jm-item-wrapper">
+                            <div class="jm-item-image">
+                              <img v-if="item.id != 'lxw'"
+                                   :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'"
+                                   :alt="item.name">
+                              <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
+                                   :alt="item.name">
+                              <span class="jm-item-overlay"> </span>
+                              <div class="jm-item-button"><a
+                                @click="doClick(item)" style="cursor:pointer">View</a>
+                              </div>
                             </div>
+                            <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
                           </div>
-                          <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
                         </div>
                       </div>
                     </div>
+                    <div class="clearfix"></div>
                   </div>
-                  <div class="clearfix"></div>
-                </div>
                 </el-tab-pane>
                 <el-tab-pane label="学生会 Student Union" name="fourth">
                   <div>
@@ -148,7 +148,7 @@
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
+                                @click="doClick(item)" style="cursor:pointer;">View</a>
                               </div>
                             </div>
                             <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
@@ -173,7 +173,7 @@
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
+                                @click="doClick(item)" style="cursor:pointer;">View</a>
                               </div>
                             </div>
                             <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
@@ -212,7 +212,7 @@
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
+                                @click="doClick(item)" style="cursor:pointer;">View</a>
                               </div>
                             </div>
                             <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
@@ -237,7 +237,7 @@
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
                               <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
+                                @click="doClick(item)" style="cursor:pointer;">View</a>
                               </div>
                             </div>
                             <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
@@ -261,8 +261,8 @@
                               <img v-else :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'"
                                    :alt="item.name">
                               <span class="jm-item-overlay"> </span>
-                              <div class="jm-item-button"><a
-                                :href="'/organization/single?name=' + item.id">View</a>
+                              <div class="jm-item-button">
+                                <a @click="doClick(item)" style="cursor:pointer;">View</a>
                               </div>
                             </div>
                             <div class="jm-item-title">{{item.name}} {{item.enName}}</div>
@@ -280,28 +280,50 @@
       </div>
       <!--- /instruments ---->
     </section>
+
+    <CPersonnel v-else :item="user"/>
     <!-- //instruments-section -->
   </div>
 </template>
 
 <script>
   import axios from 'axios'
+  import CPersonnel from "../../components/Personnel";
 
   export default {
     name: 'organization',
+    components: {CPersonnel},
     data() {
       return {
         staffList: [],
         basePath: basePath,
         activeName: 'first',
-        activeName2: 'second'
+        activeName2: 'second',
+        detail: false,
+        user: ''
       }
     },
     mounted() {
-      axios.get('/staff').then(response =>{
+      axios.get('/staff').then(response => {
         this.staffList = response.data;
       })
     },
-    methods: {}
+    methods: {
+      doClick(item) {
+        let speed = 10;
+        let timer = setInterval(function(){
+          this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+          if(this.scrollTop>0){
+            this.scrollTop = (this.scrollTop - speed >0) ? (this.scrollTop - speed) : 0;
+            speed += 20;
+            window.scrollTo(0,this.scrollTop);
+          }else{
+            clearInterval(timer);
+          }
+        },16)
+        this.user = item
+        this.detail = true
+      }
+    }
   }
 </script>

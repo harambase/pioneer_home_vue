@@ -6,10 +6,11 @@ import Full from '@/containers/Full'
 
 // Views
 import Dashboard from '@/views/Dashboard'
-import Organization from '@/views/organization/Organization'
-import Login from '@/views/common/Login'
-import Register from '@/views/common/Register'
-import SiteMap from '@/views/common/SiteMap'
+import Organization from '@/views/organization/organization'
+import Faculty from '@/views/organization/faculty_staff'
+import Login from '@/views/common/login'
+import Register from '@/views/common/register'
+import SiteMap from '@/views/common/siteMap'
 
 Vue.use(Router);
 
@@ -20,7 +21,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/login',
+      redirect: '/dashboard',
       name: '官网',
       component: Full,
       children: [
@@ -46,9 +47,15 @@ const router = new Router({
         },
         {
           path: 'site_map',
-          name: '注册',
+          name: '网站地图',
           component: SiteMap,
         },
+        {
+          path: 'faculty_staff',
+          name: '教师',
+          component: Faculty,
+        },
+
       ]
     },
   ]
