@@ -4,32 +4,30 @@
     </div>
     <nav class="navbar nav_bottom" role="navigation">
       <div class="container">
-        <div class="row">
+        <div class="row" style="padding: 20px 0 0;">
           <div class="col-md-4"></div>
           <div class="col-md-4">
             <header class="logo">
               <h1>
-                <img style="margin-top: -10px; width: 50px; height:50px;" src="/static/img/logo.png"/>
-                <a class="cd-logo link link--takiri" route="{path:'/'}">先锋教育学校 <span>Pioneer Education</span></a>
+                <img style="margin-top: -10px; width: 50px; height:50px;" :src="basePath + '/static/images/logo.png'"/>
+                <a class="cd-logo link link--takiri" href="#" @click="$router.push({path:'/dashboard'})">先锋教育学校 <span>Pioneer Education</span></a>
               </h1>
             </header>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-2">
-            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/site_map">网站地图|&nbsp;Site
+            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/site_map" @click="$router.push({path:'/site_map'})">网站地图|&nbsp;Site
             Map</a><br>
-            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/eas">登录|&nbsp;Login</a>
+            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/login" @click="$router.push({path:'/login'})">登录|&nbsp;Login</a>
           </div>
         </div>
       </div>
-      <div class="row" style="background: #444; margin-top:20px;">
+      <div class="row" style="background: rgba(55, 55, 55, 1); margin-top:20px;">
         <div class="container">
           <el-menu :default-active="activeIndex"
                    class="navbar nav_bottom"
                    mode="horizontal"
                    :router="true"
-                   text-color="#bdbdbd"
-                   active-text-color="#fff"
                    @select="handleSelect">
             <el-menu-item index="/about">
               <p>关于我们 <br>
@@ -43,17 +41,17 @@
                 </p>
               </template>
               <el-menu-item index="/liberal_arts_college">
-                <p>合作大学 <br>
+                <p>合作大学
                   <small>Universities</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="/study_by_travel">
-                <p>游学项目 <br>
+                <p>游学项目
                   <small>Study By Trave</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="/project_based_teaching">
-                <p>项目式教学 <br>
+                <p>项目式教学
                   <small>Project-based Learning</small>
                 </p>
               </el-menu-item>
@@ -70,12 +68,12 @@
                 </p>
               </template>
               <el-menu-item index="/faculty_staff">
-                <p>教师团队 <br>
+                <p>教师团队
                   <small>Faculty & Staff</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="/organization">
-                <p>组织架构 <br>
+                <p>组织架构
                   <small>Organization</small>
                 </p>
               </el-menu-item>
@@ -87,18 +85,18 @@
                 </p>
               </template>
               <el-menu-item index="/news/wechat">
-                <p>微信公众平台 <br>
+                <p>微信公众平台
                   <small>WeChat</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="/activity">
-                <p>学校活动 <br>
+                <p>学校活动
                   <small>Activities</small>
                 </p>
               </el-menu-item>
             </el-submenu>
             <el-menu-item index="/achievement">
-              <p>教学成果 <br>
+              <p>教学成果<br>
                 <small>Achievements</small>
               </p>
             </el-menu-item>
@@ -109,13 +107,13 @@
                 </p>
               </template>
               <el-menu-item index="/elementary">
-                <p>小学部 <br>
+                <p>小学部
                   <small>Elementary</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="7-2">
                 <a href="https://agoraacademy.cn">
-                  <p>深圳分校 <br>
+                  <p>深圳分校
                     <small>Agora Academy</small>
                   </p>
                 </a>
@@ -128,12 +126,12 @@
                 </p>
               </template>
               <el-menu-item index="/contact/faq">
-                <p>常见问题 <br>
+                <p>常见问题
                   <small>FAQs</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="/contact">
-                <p>联系信息 <br>
+                <p>联系信息
                   <small>Contact Info</small>
                 </p>
               </el-menu-item>
@@ -145,12 +143,12 @@
                 </p>
               </template>
               <el-menu-item index="/admission_guide">
-                <p>招生简章 <br>
+                <p>招生简章
                   <small>Admission Guide</small>
                 </p>
               </el-menu-item>
               <el-menu-item index="/opportunity">
-                <p>招聘信息 <br>
+                <p>招聘信息
                   <small>Career</small>
                 </p>
               </el-menu-item>
@@ -161,20 +159,22 @@
     </nav>
   </div>
 </template>
-<!--<style>-->
+<style>
 
-  <!--.el-menu-item p, .el-submenu__title p {-->
-    <!--padding: 0 !important;-->
-    <!--text-align: center;-->
-    <!--font-weight: 400;-->
-    <!--font-size: 14px;-->
-    <!--margin: 10px 10px;-->
-    <!--line-height: 20px;-->
-    <!--text-transform: uppercase;-->
-    <!--letter-spacing: 1px;-->
-    <!--font-family: 'Roboto Condensed', sans-serif;-->
-  <!--}-->
-<!--</style>-->
+  ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 10px;
+    line-height: 15px;
+    font-weight: 600;
+  }
+
+  .el-menu--horizontal > .el-submenu .el-submenu__title {
+    height: 60px;
+    line-height: 0px;
+    border-bottom: 2px solid transparent;
+    color: #909399;
+  }
+</style>
 
 <script>
 

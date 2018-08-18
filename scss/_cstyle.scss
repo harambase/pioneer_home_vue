@@ -218,8 +218,7 @@ button.close {
 .navbar {
   margin-bottom: -1px;
   background: rgba(0, 0, 0, 0.02);
-  padding: 20px 0 0;
-  margin-top: 2px;
+  margin-top: -1px;
 }
 
 .navbar-collapse {
@@ -4731,7 +4730,7 @@ ul.sub-child li a {
   width: 50%;
   padding: 30px 40px 30px;
   background: #FFFFFF;
-  margin: 50px auto 10px;
+  margin: 10px auto 10px;
   border: 1px solid #eee;
 }
 
@@ -4818,7 +4817,6 @@ label.test-info {
   background: #8F44AD;
   outline: none;
   border: 2px solid #8F44AD;
-  margin-left: 37.5%;
   width: 25%;
 }
 
@@ -5758,10 +5756,6 @@ label.test-info {
     margin: 0px 15px;
   }
 
-  .navbar {
-    padding: 16px 0 12px;
-  }
-
   .navbar-nav {
     width: 100%;
   }
@@ -6670,10 +6664,6 @@ label.test-info {
     display: none;
   }
 
-  .navbar {
-    padding: 10px 0;
-  }
-
   .navbar-nav > li > a {
     margin: 15px 0px;
   }
@@ -7170,10 +7160,6 @@ label.test-info {
 
   .navbar-brand {
     display: none;
-  }
-
-  .navbar {
-    padding: 10px 0;
   }
 
   .navbar-nav > li > a {
@@ -7946,10 +7932,6 @@ label.test-info {
 
   .social-icons {
     width: 28.5%;
-  }
-
-  .navbar {
-    padding: 7px 0 0 0;
   }
 
   .navbar-nav > li {

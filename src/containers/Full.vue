@@ -5,9 +5,7 @@
       <!--<Sidebar :navItems="itemFilter"/>-->
       <main class="main">
         <breadcrumb :list="list"/>
-        <div class="container-fluid">
-          <router-view></router-view>
-        </div>
+        <router-view></router-view>
       </main>
     </div>
     <AppFooter/>
