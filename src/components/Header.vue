@@ -125,7 +125,7 @@
                   <small>Contact Us</small>
                 </p>
               </template>
-              <el-menu-item index="/contact/faq">
+              <el-menu-item index="/faq">
                 <p>常见问题
                   <small>FAQs</small>
                 </p>

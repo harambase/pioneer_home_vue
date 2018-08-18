@@ -12,6 +12,8 @@ import Faculty from '@/views/organization/faculty_staff'
 import Login from '@/views/common/login'
 import Register from '@/views/common/register'
 import SiteMap from '@/views/common/siteMap'
+import FAQ from '@/views/contact/faq'
+import Contact from '@/views/contact/contact'
 
 Vue.use(Router);
 
@@ -60,6 +62,16 @@ const router = new Router({
           path: '/news/wechat',
           name: '微信公众平台',
           component: Wechat,
+        },
+        {
+          path: '/faq',
+          name: '微信公众平台',
+          component: FAQ,
+        },
+        {
+          path: '/contact',
+          name: '微信公众平台',
+          component: Contact,
         },
       ]
     },
