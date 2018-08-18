@@ -9,8 +9,8 @@
           <div class="col-md-4">
             <header class="logo">
               <h1>
-                <img style="margin-top: -10px; width: 50px; height:50px;" src="/static/images/logo.png"/>
-                <a class="cd-logo link link--takiri" href="/index">先锋教育学校 <span>Pioneer Education</span></a>
+                <img style="margin-top: -10px; width: 50px; height:50px;" src="/static/img/logo.png"/>
+                <a class="cd-logo link link--takiri" route="{path:'/'}">先锋教育学校 <span>Pioneer Education</span></a>
               </h1>
             </header>
           </div>
@@ -18,7 +18,7 @@
           <div class="col-md-2">
             <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/site_map">网站地图|&nbsp;Site
             Map</a><br>
-            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/login">登录|&nbsp;Login</a>
+            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="/eas">登录|&nbsp;Login</a>
           </div>
         </div>
       </div>
@@ -184,6 +184,7 @@
     data() {
       return {
         activeIndex: "1",
+        basePath: basePath
       }
     },
     methods: {

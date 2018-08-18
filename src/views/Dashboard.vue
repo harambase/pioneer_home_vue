@@ -26,7 +26,7 @@
         <h3 class="title text-center" style="padding-bottom: 10px;">关于学校 About us</h3>
         <div class="row">
           <div class="col-md-4 abt-img">
-            <img src="/static/images/organization/lxw_1.jpg" alt="doctor" title="doctor"/>
+            <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
           </div>
           <div class="col-md-4 abt-dec">
             <h2>刘晓伟
@@ -322,10 +322,10 @@
     z-index: 100;
     font-size: 20px;
     font-weight: 300;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .el-carousel__item blockquote p{
+  .el-carousel__item blockquote p {
     letter-spacing: 1px;
     font-size: 20px;
     line-height: 30px;
@@ -341,7 +341,6 @@
     letter-spacing: 5px;
     display: inline-block;
   }
-
 
   .el-carousel__item:nth-child(3) {
     background: url("../../static/images/5hui/1.jpg") no-repeat fixed center;
@@ -374,6 +373,7 @@
       return {
         id: getQueryString("name"),
         staffList: getStaffList(),
+        basePath: basePath,
         items: [
           {
             id: 1,

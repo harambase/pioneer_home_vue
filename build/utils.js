@@ -17,7 +17,7 @@ exports.cssLoaders = function (options) {
     options: {
       minimize: process.env.NODE_ENV === 'production',
       sourceMap: options.sourceMap,
-      alias: { '../img': '../static/img' }
+      alias: { '../image': '../static/images' }
     }
   }
 
