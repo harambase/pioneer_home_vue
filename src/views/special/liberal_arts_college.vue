@@ -37,7 +37,7 @@
                   <div class="panel-body panel_text">
                     <div class="row">
                       <div class="col-md-5">
-                        <img src="/static/images/universities/SJU_1.jpg"/>
+                        <img :src="basePath + '/static/images/universities/SJU_1.jpg'"/>
                         <p class="diff">
                           <small> @Brace Hemmelgarn bracehemmelgarn 21 Sep 2016<br></small>
                           圣本笃学院和圣约翰大学<br> College of Saint Benedict|Saint John's University<br>
@@ -139,10 +139,10 @@
                     <div class="col-md-3 jm-item first">
                       <div class="jm-item-wrapper">
                         <div class="jm-item-image">
-                          <img :src="'/static/images/universities/' + item.shortName +'_icon.jpg'" :alt="item.name">
+                          <img :src="basePath + '/static/images/universities/' + item.shortName +'_icon.jpg'"
+                               :alt="item.name">
                           <span class="jm-item-overlay"> </span>
-                          <div class="jm-item-button"><a
-                            :href="'/liberal_arts_college/single?name=' + item.id">View</a></div>
+                          <div class="jm-item-button"><a style="cursor: pointer" @click="doClick(item)">View</a></div>
                         </div>
                         <div class="jm-item-title">{{item.name}}<br></div>
                       </div>
@@ -160,4 +160,44 @@
   </section>
   <!-- //instruments-section -->
 
+  <CSchool v-else :item="school"/>
+
 </template>
+<script>
+  import CSchool from "../../components/School";
+  import axios from 'axios'
+
+  export default {
+    components: {CSchool},
+    data() {
+      return {
+        school: '',
+        detail: false,
+        schoolList: [],
+        basePath: basePath
+      }
+    },
+    mounted() {
+      axios.get('/school').then(response => {
+        this.schoolList = response.data;
+      })
+    },
+    methods: {
+      doClick(item) {
+        let speed = 10;
+        let timer = setInterval(function () {
+          this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+          if (this.scrollTop > 0) {
+            this.scrollTop = (this.scrollTop - speed > 0) ? (this.scrollTop - speed) : 0;
+            speed += 20;
+            window.scrollTo(0, this.scrollTop);
+          } else {
+            clearInterval(timer);
+          }
+        }, 16)
+        this.school = item
+        this.detail = true
+      }
+    }
+  }
+</script>

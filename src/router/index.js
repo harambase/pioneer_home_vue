@@ -16,6 +16,9 @@ import FAQ from '@/views/contact/faq'
 import Contact from '@/views/contact/contact'
 import Admission from '@/views/opportunity/admission_guide'
 import Opportunity from '@/views/opportunity/Opportunity'
+import PBT from '@/views/special/project_based_teaching'
+import LAC from '@/views/special/liberal_arts_college'
+
 
 Vue.use(Router);
 
@@ -84,6 +87,16 @@ const router = new Router({
           path: '/opportunity',
           name: '招聘简章',
           component: Opportunity,
+        },
+        {
+          path: '/project_based_teaching',
+          name: '项目式学习',
+          component: PBT,
+        },
+        {
+          path: '/liberal_arts_college',
+          name: '合作院校',
+          component: LAC,
         },
       ]
     },

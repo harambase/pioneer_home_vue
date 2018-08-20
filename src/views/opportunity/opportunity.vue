@@ -299,6 +299,6 @@
 
 <script>
   export default {
-    name: 'faq',
+    name: 'opportunity',
   }
 </script>
