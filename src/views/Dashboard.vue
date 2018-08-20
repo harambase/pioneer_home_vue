@@ -27,7 +27,7 @@
           <h3 class="title text-center" style="padding-bottom: 10px;">关于学校 About us</h3>
           <div class="row">
             <div class="col-md-4 abt-img">
-              <img :src=" basePath + '/public/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
+              <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
             </div>
             <div class="col-md-4 abt-dec">
               <h2>刘晓伟
@@ -274,10 +274,10 @@
               <div class="main-box" v-if="item.type === 'f'">
                 <a v-if="item.id != 'lxw'" @click="doClick(item)" style="cursor:pointer;"
                    class="team-icon">
-                  <img :src="basePath + '/public/images/organization/' + item.id +'_1.jpg'" :alt="item.name">
+                  <img :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'" :alt="item.name">
                 </a>
                 <a v-else @click="doClick(item)" style="cursor:pointer;" class="team-icon">
-                  <img :src="basePath + '/public/images/organization/' + item.id +'_2.jpg'" :alt="item.name">
+                  <img :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'" :alt="item.name">
                 </a>
                 <p>{{item.name}} {{item.enName}}<br><span>{{item.jobTitle}}</span>
                 </p>

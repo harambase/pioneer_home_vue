@@ -4,7 +4,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 import VeeValidate from 'vee-validate'
 import App from './App'
 import router from './router'
-
 import axios from 'axios'
 
 Vue.use(VeeValidate, {fieldsBagName: 'formFields'});

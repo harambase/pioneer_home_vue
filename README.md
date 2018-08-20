@@ -1,32 +1,33 @@
-# the project is leading by s1lin
-
-> http://s1lin.github.io
-
-# the template was adopted from core-ui
-
-> Open Source Admin Template
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:30001
-npm run dev
+# 先锋教育官方主页
 
 
-npm run build
+请按照以下顺序排序
+  1.校长
+  2.副校长
+  3.全职导师   0,1,7        0:全部 1:导师 2:助教 4:志愿者 7：全职 8:兼职
+  4.全职助教   0,2,7
+  5.实习助教   0,2,7
+  6.兼职导师   0,1,8
+  7.兼职助教   0,2,8
+  10.兼职老师  0,8
+  11.志愿者    0,4
 
-# build for production and view the bundle analyzer report
-npm run build --report
 
-# run unit tests
-npm run unit
 
-# run e2e tests
-npm run e2e
 
-# run all tests
-npm test
+
+//没有 0
+//董事会 1
+//理事会 4
+//学生会 2
+//仲裁委员会 3
+//学术委员会 5
+//传播委员会 6
+//生活委员会 7
+
+
+安装wechatsogou
+pip install wechatsogou --upgrade
+
+
 
