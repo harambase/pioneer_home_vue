@@ -65,12 +65,6 @@ button.btn.btn-primary:focus {
   box-shadow: none;
 }
 
-.top-strip {
-  /*padding:20px 0 15px 0;*/
-  background: url('../static/images/top-line.jpg') 0px 0px;
-  min-height: 4px;
-}
-
 .social-icons {
   float: left;
   width: 40%;
@@ -708,7 +702,6 @@ a.cd-logo {
 
 /*-- Stats --*/
 .stats {
-  background: url("../static/images/5hui/2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -832,7 +825,6 @@ p.stats-info {
 }
 
 .abt-img img {
-  src: url("../static/images/organization/lxw_1.jpg");
   width: 86%;
 }
 
@@ -1641,13 +1633,11 @@ div#map iframe {
   height: 48px;
   border: none;
   text-indent: 100%;
-  background: url("../static/images/to-top2.png") no-repeat 0px 0px;
   z-index: 9999;
 }
 
 /*-- about-section-starts --*/
 .inner-banner {
-  background: url('../static/images/5hui/5.jpg') no-repeat 0px 0px;
   min-height: 250px;
   background-size: cover;
   padding-top: 135px;
@@ -1703,7 +1693,7 @@ div#map iframe {
 
 /* happy clients */
 section.happy-patients {
-  //background: url('../static/images/happy.jpg') no-repeat 0px 0px;
+  //background: url('../public/images/happy.jpg') no-repeat 0px 0px;
   background-size: cover;
   min-height: 540px;
   background-attachment: fixed;
@@ -2060,7 +2050,7 @@ p.w-text {
 /*--//team--*/
 /*--who-are-we--*/
 .who-are-we {
-  //background: url(../static/images/who.jpg) no-repeat 0px 0px;
+  //background: url(../public/images/who.jpg) no-repeat 0px 0px;
   padding: 70px 0 0 0;
   border-top: 6px solid #F5D503;
   background-size: cover;
@@ -2103,7 +2093,7 @@ ul.whogrid_info li {
 }
 
 li.tick {
-  //background: url(../static/images/tick.png) no-repeat 0px 0px;
+  //background: url(../public/images/tick.png) no-repeat 0px 0px;
   height: 31px;
   padding: 0 0 0 28px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -2164,22 +2154,22 @@ Images block
 
 .cd-images-list > li {
   height: 550px;
-  //background: #979c9c url(../static/images/img-1.jpg) no-repeat center center;
+  //background: #979c9c url(../public/images/img-1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .cd-images-list > li:nth-of-type(2) {
-  //background: #343642 url(../static/images/img-2.jpg) no-repeat center center;
+  //background: #343642 url(../public/images/img-2.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .cd-images-list > li:nth-of-type(3) {
-  //background: #982b3c url(../static/images/img-3.jpg) no-repeat center center;
+  //background: #982b3c url(../public/images/img-3.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .cd-images-list > li:nth-of-type(4) {
-  //background: #338899 url(../static/images/img-4.jpg) no-repeat center center;
+  //background: #338899 url(../public/images/img-4.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -2365,7 +2355,7 @@ Content block
 @media only screen and (min-width: 768px) {
   .cd-content-block {
     /* reset style */
-    position: static;
+    position: public;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -2557,7 +2547,7 @@ Javascript disabled
   }
 
   .no-js .cd-images-list > li {
-    position: static;
+    position: public;
     width: 50%;
     float: left;
     height: 400px;
@@ -2569,7 +2559,7 @@ Javascript disabled
   }
 
   .no-js .cd-images-list > li.is-selected {
-    position: static;
+    position: public;
   }
 
   .no-js .cd-images-list > li > a {
@@ -4289,7 +4279,7 @@ p.reply i {
 }
 
 .md-col-in ul li i {
-  //background: url(../static/images/img-sprite.png) no-repeat -497px -20px;
+  //background: url(../public/images/img-sprite.png) no-repeat -497px -20px;
   width: 8px;
   height: 8px;
   display: inline-block;

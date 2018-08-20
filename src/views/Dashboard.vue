@@ -27,7 +27,7 @@
           <h3 class="title text-center" style="padding-bottom: 10px;">关于学校 About us</h3>
           <div class="row">
             <div class="col-md-4 abt-img">
-              <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
+              <img :src=" basePath + '/public/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
             </div>
             <div class="col-md-4 abt-dec">
               <h2>刘晓伟
@@ -274,10 +274,10 @@
               <div class="main-box" v-if="item.type === 'f'">
                 <a v-if="item.id != 'lxw'" @click="doClick(item)" style="cursor:pointer;"
                    class="team-icon">
-                  <img :src="basePath + '/static/images/organization/' + item.id +'_1.jpg'" :alt="item.name">
+                  <img :src="basePath + '/public/images/organization/' + item.id +'_1.jpg'" :alt="item.name">
                 </a>
                 <a v-else @click="doClick(item)" style="cursor:pointer;" class="team-icon">
-                  <img :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'" :alt="item.name">
+                  <img :src="basePath + '/public/images/organization/' + item.id +'_2.jpg'" :alt="item.name">
                 </a>
                 <p>{{item.name}} {{item.enName}}<br><span>{{item.jobTitle}}</span>
                 </p>
@@ -349,23 +349,23 @@
   }
 
   .el-carousel__item:nth-child(3) {
-    background: url("../../static/images/5hui/1.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/1.jpg") no-repeat fixed center;
   }
 
   .el-carousel__item:nth-child(4) {
-    background: url("../../static/images/5hui/2.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/2.jpg") no-repeat fixed center;
   }
 
   .el-carousel__item:nth-child(5) {
-    background: url("../../static/images/5hui/3.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/3.jpg") no-repeat fixed center;
   }
 
   .el-carousel__item:nth-child(6) {
-    background: url("../../static/images/5hui/4.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/4.jpg") no-repeat fixed center;
   }
 
   .el-carousel__item:nth-child(7) {
-    background: url("../../static/images/5hui/5.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/5.jpg") no-repeat fixed center;
   }
 
 </style>
@@ -388,31 +388,31 @@
             id: 1,
             title: '学会做人 Good Character',
             description: '关于爱、包容、尊重的良好品格',
-            pic: '/static/images/1.jpg'
+            pic: '/public/images/1.jpg'
           },
           {
             id: 2,
             title: '学会思考 Critical Thinking',
             description: '勇敢说不，尤其勇敢对自己说不',
-            pic: '/static/images/2.jpg'
+            pic: '/public/images/2.jpg'
           },
           {
             id: 3,
             title: '学会交流 Communication',
             description: '一生具备对事物好奇探索的能力',
-            pic: '/static/images/3.jpg'
+            pic: '/public/images/3.jpg'
           },
           {
             id: 4,
             title: '学会做人 Good Character',
             description: '与各式各样的人倾听沟通相处',
-            pic: '/static/images/4.jpg'
+            pic: '/public/images/4.jpg'
           },
           {
             id: 5,
             title: '学会合作 Collaboration',
             description: '理解分歧、达成共识、欣赏每一个人',
-            pic: '/static/images/5.jpg'
+            pic: '/public/images/5.jpg'
           }
         ]
       }

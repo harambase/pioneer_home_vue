@@ -174,6 +174,13 @@
     border-bottom: 2px solid transparent;
     color: #909399;
   }
+
+  .top-strip {
+    /*padding:20px 0 15px 0;*/
+    background: url('../../public/images/top-line.jpg') 0px 0px;
+    min-height: 4px;
+  }
+
 </style>
 
 <script>
