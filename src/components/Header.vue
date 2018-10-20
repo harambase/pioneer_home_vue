@@ -16,9 +16,11 @@
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-2">
-            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/site_map" @click="$router.push({path:'/site_map'})">网站地图|&nbsp;Site
+            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/site_map"
+                                                      @click="$router.push({path:'/site_map'})">网站地图|&nbsp;Site
             Map</a><br>
-            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/login" @click="$router.push({path:'/login'})">登录|&nbsp;Login</a>
+            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/login"
+                                                     @click="$router.push({path:'/login'})">登录|&nbsp;Login</a>
           </div>
         </div>
       </div>
@@ -181,6 +183,53 @@
     min-height: 4px;
   }
 
+  .el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+    border-bottom: 2px solid #409EFF;
+    color: white;
+  }
+
+  .el-menu--horizontal > .el-submenu:focus .el-submenu__title, .el-menu--horizontal > .el-submenu:hover .el-submenu__title {
+    color: white;
+  }
+
+  .el-dropdown-menu__item--divided:before, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-submenu .el-submenu__title:hover {
+    background-color: #010004;
+  }
+
+  .el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    outline: 0;
+    color: white;
+  }
+
+  .el-menu--horizontal > .el-submenu .el-submenu__title:hover {
+    background-color: #010004;
+  }
+
+  .el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title {
+    background-color: white;
+    float: none;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 8px;
+    color: #909399;
+  }
+
+  .el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    outline: 0;
+    color: white;
+    background: rgb(55, 55, 55);
+  }
+
+  .el-menu--popup-bottom-start {
+    margin-top: 0;
+  }
+
+  .el-menu--popup {
+    z-index: 100;
+    border: none;
+    padding: 0;
+    border-radius: 1px;
+  }
 </style>
 
 <script>

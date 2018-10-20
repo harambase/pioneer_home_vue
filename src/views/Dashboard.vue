@@ -83,7 +83,7 @@
       <div class="stats">
         <div class="container" style="font-weight: 100">
           <div class="news-section-head text-center">
-            <h3>先锋特色 Pioneer Specialties</h3>
+            <h3 style="color:white">先锋特色 Pioneer Specialties</h3>
           </div>
           <el-row :gutter="12">
             <el-col :span="6">
@@ -95,7 +95,9 @@
                   <div class="bottom clearfix">
                     <i class="fa fa-smile-o">400</i>
                     <p class="stats-info">近20年间，超过400名先锋毕业生进入美国一流大学读书。</p>
-                    <el-button type="text" class="button">了解更多 Learn More</el-button>
+                    <el-button type="text" class="button" style="font-size: 16px;"
+                               @click="$router.push({path:'/achievement'})">了解更多 Learn More
+                    </el-button>
                   </div>
                 </div>
               </el-card>
@@ -109,7 +111,9 @@
                   <div class="bottom clearfix">
                     <i class="fa fa-smile-o">15</i>
                     <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。</p>
-                    <el-button type="text" class="button">了解更多 Learn More</el-button>
+                    <el-button type="text" class="button" style="font-size: 16px;"
+                               @click="$router.push({path:'/about'})">了解更多 Learn More
+                    </el-button>
                   </div>
                 </div>
               </el-card>
@@ -123,7 +127,9 @@
                   <div class="bottom clearfix">
                     <i class="fa fa-smile-o">2</i>
                     <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。</p>
-                    <el-button type="text" class="button">了解更多 Learn More</el-button>
+                    <el-button type="text" class="button" style="font-size: 16px;"
+                               @click="$router.push({path:'/campus'})">了解更多 Learn More
+                    </el-button>
                   </div>
                 </div>
               </el-card>
@@ -137,7 +143,9 @@
                   <div class="bottom clearfix">
                     <i class="fa fa-smile-o">18</i>
                     <p class="stats-info">与超过18所美国一流大学合作，并提供高额奖学金。</p>
-                    <el-button type="text" class="button">了解更多 Learn More</el-button>
+                    <el-button type="text" class="button" style="font-size: 16px;"
+                               @click="$router.push({path:'/liberal_arts_college'})">了解更多 Learn More
+                    </el-button>
                   </div>
                 </div>
               </el-card>
@@ -148,10 +156,10 @@
       <!-- //tabs -->
 
       <!-- quick links -->
-      <div class="news-section" id="news">
+      <div class="news-section">
         <div class="container">
           <div class="news-section-head text-center">
-            <h3>先锋教师团队 Faculty & Staff</h3>
+            <h3>先锋教学团队 Faculty</h3>
             <p>We learn from the best!</p>
           </div>
           <ul class="item-list g-clearfix" id="detail">
@@ -164,7 +172,7 @@
                 <a v-else @click="doClick(item)" style="cursor:pointer;" class="team-icon">
                   <img :src="basePath + '/static/images/organization/' + item.id +'_2.jpg'" :alt="item.name">
                 </a>
-                <p>{{item.name}} {{item.enName}}<br><span>{{item.jobTitle}}</span>
+                <p style="line-height: 17px">{{item.name}} <br> {{item.enName}}<br><span>{{item.jobTitle}}</span>
                 </p>
                 <div class="teacher-tips">
                   <h2>{{item.name}}</h2>
