@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
     <div v-if="!detail">
       <div class="demo-2">
-        <div id="slider" class="sl-slider-wrapper sl-slide">
+        <div class="sl-slider-wrapper sl-slide">
           <el-carousel height="600px">
             <el-carousel-item v-for="item in items" :key="item.id">
               <div class="sl-slide-inner">
@@ -12,7 +12,6 @@
                   <cite>先锋教育理念 Education Principals</cite>
                 </blockquote>
               </div>
-
             </el-carousel-item>
           </el-carousel>
           <div class="sl-slider">
@@ -82,182 +81,68 @@
 
       <!-- Stats -->
       <div class="stats">
-        <div class="container">
-          <p class="slideanim">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-            (The
-            Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
-            very popular during the Renaissance.</p>
-          <div class="stats-info">
-            <div class="col-md-3 col-sm-3 stats-grid slideanim">
-              <i class="fa fa-smile-o"></i>
-              <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='18000'
-                   data-delay='.5' data-increment="50">18000
-              </div>
-              <p class="stats-info">Happy Smiles</p>
-            </div>
-            <div class="col-md-3 col-sm-3 stats-grid slideanim">
-              <i class="fa fa-facebook"></i>
-              <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='1700'
-                   data-delay='.5' data-increment="5">1700
-              </div>
-              <p class="stats-info">Facebook Likes</p>
-            </div>
-            <div class="col-md-3 col-sm-3 stats-grid slideanim">
-              <i class="fa fa-twitter"></i>
-              <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='21500'
-                   data-delay='.5' data-increment="20">21500
-              </div>
-              <p class="stats-info">Twitter Followers</p>
-            </div>
-            <div class="col-md-3 col-sm-3 stats-grid slideanim">
-              <i class="fa fa-flask"></i>
-              <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='285'
-                   data-delay='.5' data-increment="1">285
-              </div>
-              <p class="stats-info">Lorem Ipsum</p>
-            </div>
-            <div class="clearfix"></div>
+        <div class="container" style="font-weight: 100">
+          <div class="news-section-head text-center">
+            <h3>先锋特色 Pioneer Specialties</h3>
           </div>
-
-        </div>
-      </div>
-      <!-- //Stats -->
-
-      <!-- tabs -->
-      <div class="vertical-tabs">
-        <div class="container">
-          <h3 class="title text-center">学校特色 School Specialists </h3>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 bhoechie-tab-container">
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
-                <div class="list-group">
-                  <a href="#" class="list-group-item active text-center">
-                    先锋的合作院校<br>
-                    <small>Universities</small>
-                  </a>
-                  <a href="#" class="list-group-item text-center">
-                    先锋游学<br>
-                    <small>Study By Travel</small>
-                  </a>
-                  <a href="#" class="list-group-item text-center">
-                    项目式教学<br>
-                    <small>Project-based Teaching</small>
-                  </a>
+          <el-row :gutter="12">
+            <el-col :span="6">
+              <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+                <div class="ser-img">
+                  <img src="images/ser2.jpg" title="service" alt="" class="image"/>
                 </div>
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
-                <!-- flight section -->
-                <div class="bhoechie-tab-content active">
-                  <div class="services">
-                    <div class="ser-img">
-                      <img src="images/ser1.jpg" title="service" alt=""/>
-                    </div>
-                    <div class="ser-info">
-                      <h3>Contrary to popular belief, Lorem Ipsum is not simply random text</h3>
-                      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                        interested. Sections
-                        1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                        reproduced in their
-                        by English versions from the 1914 translation by H. Rackham.
-                      </p>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-                        ipsa quae ab illo inventore dicta sunt explicabo
-                      </p>
-                      <a href="/liberal_arts_college">阅读更多 Read More</a>
-                    </div>
-                    <div class="clearfix"></div>
+                <div style="padding: 14px;" class="stats-grid slideanim">
+                  <div class="bottom clearfix">
+                    <i class="fa fa-smile-o">400</i>
+                    <p class="stats-info">近20年间，超过400名先锋毕业生进入美国一流大学读书。</p>
+                    <el-button type="text" class="button">了解更多 Learn More</el-button>
                   </div>
                 </div>
-                <!-- train section -->
-                <div class="bhoechie-tab-content">
-                  <div class="services">
-                    <div class="ser-img">
-                      <img src="images/ser2.jpg" title="service" alt=""/>
-                    </div>
-                    <div class="ser-info">
-                      <h3>At vero eos et accusamus et iusto dignissimos ducimus qui blanditiis</h3>
-                      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                        interested. Sections
-                        1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                        reproduced in their
-                        by English versions from the 1914 translation by H. Rackham.
-                      </p>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-                        ipsa quae ab illo inventore dicta sunt explicabo
-                      </p>
-                      <a href="single.html">Read More</a>
-                    </div>
-                    <div class="clearfix"></div>
+              </el-card>
+            </el-col>
+            <el-col :span="6">
+              <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+                <div class="ser-img">
+                  <img src="images/ser2.jpg" title="service" alt="" class="image"/>
+                </div>
+                <div style="padding: 14px;" class="stats-grid slideanim">
+                  <div class="bottom clearfix">
+                    <i class="fa fa-smile-o">15</i>
+                    <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。</p>
+                    <el-button type="text" class="button">了解更多 Learn More</el-button>
                   </div>
                 </div>
-
-                <!-- hotel search -->
-                <div class="bhoechie-tab-content">
-                  <div class="services">
-                    <div class="ser-img">
-                      <img src="images/ser3.jpg" title="service" alt=""/>
-                    </div>
-                    <div class="ser-info">
-                      <h3>On the other hand, we denounce with righteous indignation</h3>
-                      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                        interested. Sections
-                        1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                        reproduced in their
-                        by English versions from the 1914 translation by H. Rackham.
-                      </p>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-                        ipsa quae ab illo inventore dicta sunt explicabo
-                      </p>
-                      <a href="single.html">Read More</a>
-                    </div>
-                    <div class="clearfix"></div>
+              </el-card>
+            </el-col>
+            <el-col :span="6">
+              <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+                <div class="ser-img">
+                  <img src="images/ser2.jpg" title="service" alt="" class="image"/>
+                </div>
+                <div style="padding: 14px;" class="stats-grid slideanim">
+                  <div class="bottom clearfix">
+                    <i class="fa fa-smile-o">2</i>
+                    <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。</p>
+                    <el-button type="text" class="button">了解更多 Learn More</el-button>
                   </div>
                 </div>
-                <div class="bhoechie-tab-content">
-                  <div class="services">
-                    <div class="ser-img">
-                      <img src="images/ser4.jpg" title="service" alt=""/>
-                    </div>
-                    <div class="ser-info">
-                      <h3>Laboris nisi ut aliquip ex ea commodo consequat</h3>
-                      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                        interested. Sections
-                        1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                        reproduced in their
-                        by English versions from the 1914 translation by H. Rackham.
-                      </p>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-                        ipsa quae ab illo inventore dicta sunt explicabo
-                      </p>
-                      <a href="single.html">Read More</a>
-                    </div>
-                    <div class="clearfix"></div>
+              </el-card>
+            </el-col>
+            <el-col :span="6">
+              <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+                <div class="ser-img">
+                  <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
+                </div>
+                <div style="padding: 14px;" class="stats-grid slideanim">
+                  <div class="bottom clearfix">
+                    <i class="fa fa-smile-o">18</i>
+                    <p class="stats-info">与超过18所美国一流大学合作，并提供高额奖学金。</p>
+                    <el-button type="text" class="button">了解更多 Learn More</el-button>
                   </div>
                 </div>
-                <div class="bhoechie-tab-content">
-                  <div class="services">
-                    <div class="ser-img">
-                      <img src="images/ser5.jpg" title="service" alt=""/>
-                    </div>
-                    <div class="ser-info">
-                      <h3>Temporibus autem quibusdam et aut officiis debitis</h3>
-                      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                        interested. Sections
-                        1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                        reproduced in their
-                        by English versions from the 1914 translation by H. Rackham.
-                      </p>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-                        ipsa quae ab illo inventore dicta sunt explicabo
-                      </p>
-                      <a href="single.html">Read More</a>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              </el-card>
+            </el-col>
+          </el-row>
         </div>
       </div>
       <!-- //tabs -->
@@ -349,23 +234,105 @@
   }
 
   .el-carousel__item:nth-child(3) {
-    background: url("../../public/images/5hui/1.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/1.jpg") no-repeat center;
+    padding: 200px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -200px;
+    /*width: 80%;*/
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
   }
 
   .el-carousel__item:nth-child(4) {
-    background: url("../../public/images/5hui/2.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/2.jpg") no-repeat center;
+    padding: 200px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -200px;
+    /*width: 80%;*/
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
   }
 
   .el-carousel__item:nth-child(5) {
-    background: url("../../public/images/5hui/3.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/3.jpg") no-repeat center;
+    padding: 200px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -200px;
+    /*width: 80%;*/
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
   }
 
   .el-carousel__item:nth-child(6) {
-    background: url("../../public/images/5hui/4.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/4.jpg") no-repeat center;
+    padding: 200px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -200px;
+    /*width: 80%;*/
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
   }
 
   .el-carousel__item:nth-child(7) {
-    background: url("../../public/images/5hui/5.jpg") no-repeat fixed center;
+    background: url("../../public/images/5hui/5.jpg") no-repeat center;
+    padding: 200px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -200px;
+    /*width: 80%;*/
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+
+  .stats {
+    background: url("../../public/images/5hui/2.jpg") no-repeat fixed center;
+    left: -200px;
+    background-size: cover;
+    height: 850px;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .el-card {
+    border: none;
+  }
+
+  .el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover {
+    -webkit-box-shadow: 0 10px 30px 2px rgb(249, 244, 244);
+    box-shadow: 0 10px 30px 2px rgb(249, 244, 244);
   }
 
 </style>
