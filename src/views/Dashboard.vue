@@ -227,7 +227,7 @@
   </div>
 </template>
 <style>
-  .el-carousel__item h3 {
+  .demo-2 .el-carousel__item h3 {
     font-size: 70px;
     padding: 180px 30px 10px 30px;
     width: 80%;
@@ -238,7 +238,7 @@
     z-index: 100;
   }
 
-  .el-carousel__item blockquote {
+  .demo-2 .el-carousel__item blockquote {
     padding-top: 10px;
     width: 80%;
     max-width: 960px;
@@ -251,14 +251,14 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .el-carousel__item blockquote p {
+  .demo-2 .el-carousel__item blockquote p {
     letter-spacing: 1px;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
   }
 
-  .el-carousel__item blockquote cite {
+  .demo-2 .el-carousel__item blockquote cite {
     font-size: 14px;
     padding-top: 25px;
     font-weight: 600;
@@ -268,7 +268,7 @@
     display: inline-block;
   }
 
-  .el-carousel__item:nth-child(3) {
+  .demo-2 .el-carousel__item:nth-child(3) {
     background: url("../../public/images/5hui/1.jpg") no-repeat center;
     padding: 200px;
     -webkit-box-sizing: content-box;
@@ -283,7 +283,7 @@
     background-size: cover;
   }
 
-  .el-carousel__item:nth-child(4) {
+  .demo-2 .el-carousel__item:nth-child(4) {
     background: url("../../public/images/5hui/2.jpg") no-repeat center;
     padding: 200px;
     -webkit-box-sizing: content-box;
@@ -298,7 +298,7 @@
     background-size: cover;
   }
 
-  .el-carousel__item:nth-child(5) {
+  .demo-2 .el-carousel__item:nth-child(5) {
     background: url("../../public/images/5hui/3.jpg") no-repeat center;
     padding: 200px;
     -webkit-box-sizing: content-box;
@@ -313,7 +313,7 @@
     background-size: cover;
   }
 
-  .el-carousel__item:nth-child(6) {
+  .demo-2 .el-carousel__item:nth-child(6) {
     background: url("../../public/images/5hui/4.jpg") no-repeat center;
     padding: 200px;
     -webkit-box-sizing: content-box;
@@ -328,7 +328,7 @@
     background-size: cover;
   }
 
-  .el-carousel__item:nth-child(7) {
+  .demo-2 .el-carousel__item:nth-child(7) {
     background: url("../../public/images/5hui/5.jpg") no-repeat center;
     padding: 200px;
     -webkit-box-sizing: content-box;
