@@ -20,7 +20,7 @@
                                                       @click="$router.push({path:'/site_map'})">网站地图|&nbsp;Site
             Map</a><br>
             <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/login"
-                                                     @click="$router.push({path:'/login'})">登录|&nbsp;Login</a>
+                                                     @click="$router.push({path:'/login'})">登录EAS|&nbsp;Login EAS</a>
           </div>
         </div>
       </div>
