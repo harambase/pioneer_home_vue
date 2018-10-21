@@ -6,10 +6,11 @@ import Full from '@/containers/Full'
 
 // Views
 import Dashboard from '@/views/Dashboard'
-import About from '@/views/about'
-import Organization from '@/views/organization/organization'
+import About from '@/views/About'
+import Organization from '@/views/organization/Organization'
 import Wechat from '@/views/news/wechat'
-import Faculty from '@/views/organization/faculty_staff'
+import Faculty from '@/views/organization/Faculty'
+import Personnel from '@/views/organization/Personnel'
 import Login from '@/views/common/login'
 import Register from '@/views/common/register'
 import SiteMap from '@/views/common/sitemap'
@@ -65,6 +66,11 @@ const router = new Router({
           path: 'faculty_staff',
           name: '教师',
           component: Faculty,
+        },
+        {
+          path: 'faculty_staff/personnel',
+          name: '教师',
+          component: Personnel,
         },
         {
           path: '/news/wechat',

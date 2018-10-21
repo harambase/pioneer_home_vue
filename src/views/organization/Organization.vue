@@ -288,7 +288,7 @@
 
 <script>
   import axios from 'axios'
-  import CPersonnel from "../../components/Personnel";
+  import CPersonnel from "./Personnel";
 
   export default {
     name: 'organization',

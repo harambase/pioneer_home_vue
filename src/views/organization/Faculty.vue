@@ -1,6 +1,6 @@
 <template>
   <!-- instruments-section -->
-  <section v-if="!detail" class="instruments-section">
+  <section class="instruments-section">
     <div class="inner-banner demo-2 text-center">
       <div id="breadcrumb_wrapper">
         <div class="container">
@@ -41,7 +41,7 @@
                 <el-tabs v-model="activeName" type="border-card">
                   <el-tab-pane label="全部 ALL" name="first">
                     <div>
-                      <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.type == 'f'" class="col-md-3 jm-item first">
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
@@ -63,7 +63,7 @@
                   </el-tab-pane>
                   <el-tab-pane label="导师 Mentor" name="second">
                     <div>
-                      <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('1')!=-1 && item.type == 'f'">
                           <div class="col-md-3 jm-item first">
                             <div class="jm-item-wrapper">
@@ -88,7 +88,7 @@
                   </el-tab-pane>
                   <el-tab-pane label="助教 Assistant Teacher" name="third">
                     <div>
-                      <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('2')!=-1 && item.type == 'f'">
                           <div class="col-md-3 jm-item first">
                             <div class="jm-item-wrapper">
@@ -113,7 +113,7 @@
                   </el-tab-pane>
                   <el-tab-pane label="全职 Full-time Staff" name="fourth">
                     <div>
-                      <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('7')!=-1 && item.type == 'f'">
                           <div class="col-md-3 jm-item first">
                             <div class="jm-item-wrapper">
@@ -138,7 +138,7 @@
                   </el-tab-pane>
                   <el-tab-pane label="兼职 Part-time Staff" name="fifth">
                     <div>
-                      <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('8')!=-1 && item.type == 'f'">
                           <div class="col-md-3 jm-item first">
                             <div class="jm-item-wrapper">
@@ -163,7 +163,7 @@
                   </el-tab-pane>
                   <el-tab-pane label="志愿者 Volunteers" name="sixth">
                     <div>
-                      <div v-for="(item, index) in staffList" :key="item.id">
+                      <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('4')!=-1 && item.type == 'f'">
                           <div class="col-md-3 jm-item first">
                             <div class="jm-item-wrapper">
@@ -197,45 +197,30 @@
   </section>
   <!-- //instruments-section -->
 
-  <CPersonnel v-else :item="user"/>
 </template>
 
 <script>
   import axios from 'axios';
-  import CPersonnel from "../../components/Personnel";
 
   export default {
     name: 'faculty_staff',
-    components: {CPersonnel},
     data() {
       return {
         basePath: basePath,
         user: '',
         activeName: 'first',
         staffList: '',
-        detail: false,
       }
     },
     mounted() {
-      axios.get(basePath + '/staff').then(response => {
+      axios.get(this.basePath + '/staff').then(response => {
         this.staffList = response.data;
       })
     },
     methods: {
       doClick(item) {
-        let speed = 10;
-        let timer = setInterval(function () {
-          this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-          if (this.scrollTop > 0) {
-            this.scrollTop = (this.scrollTop - speed > 0) ? (this.scrollTop - speed) : 0;
-            speed += 20;
-            window.scrollTo(0, this.scrollTop);
-          } else {
-            clearInterval(timer);
-          }
-        }, 16)
-        this.user = item
-        this.detail = true
+        window.localStorage.setItem('personnel', JSON.stringify(item));
+        this.$router.push({path: '/faculty_staff/personnel'});
       }
     }
   }

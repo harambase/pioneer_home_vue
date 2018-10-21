@@ -42,12 +42,26 @@
 
 <script>
   export default {
-    name: 'c-personnel',
-    props: ['item'],
+    name: 'personnel',
     data() {
       return {
+        item: JSON.parse(window.localStorage.getItem("personnel")),
         basePath: basePath,
       }
+    },
+    mounted() {
+      let speed = 10;
+      let timer = setInterval(function () {
+        this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        if (this.scrollTop > 0) {
+          this.scrollTop = (this.scrollTop - speed > 0) ? (this.scrollTop - speed) : 0;
+          speed += 20;
+          window.scrollTo(0, this.scrollTop);
+        } else {
+          clearInterval(timer);
+        }
+      }, 16);
+      window.localStorage.clear();
     }
   }
 </script>
