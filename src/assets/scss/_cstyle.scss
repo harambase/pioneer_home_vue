@@ -3124,7 +3124,7 @@ span.glyphicon.glyphicon-menu-down {
   bottom: 17px;
   background: rgba(0, 0, 0, 0.64);
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 30px;
   font-weight: normal;
   padding: 5px 12px 6px;
@@ -3171,10 +3171,10 @@ span.glyphicon.glyphicon-menu-down {
   font-size: 15px;
   letter-spacing: 2px;
   line-height: 60px;
-  -webkit-transition: all 0.2s ease-in 0s;
-  -moz-transition: all 0.2s ease-in 0s;
-  -o-transition: all 0.2s ease-in 0s;
-  transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.5s 0s;
+  -moz-transition: all 0.5s 0s;
+  -o-transition: all 0.5s 0s;
+  transition: all 0.5s 0s;
   text-decoration: none !important;
   display: block;
 }
@@ -5326,7 +5326,7 @@ label.test-info {
   .jm-item-title {
     left: -4px;
     bottom: 17px;
-    font-size: 16px;
+    font-size: 15px;
     padding: 3px 10px 5px;
   }
 

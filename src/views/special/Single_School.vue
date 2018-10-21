@@ -11,7 +11,7 @@
     <!--- instrument ---->
     <div class="instrument">
       <div class="container">
-        <h3 class="last-updated"><a href="/liberal_arts_college" style="color: white; ">先锋的合作院校</a>
+        <h3 class="last-updated"><a @click="$router.push({path: '/liberal_arts_college'})" style="color: white; ">先锋的合作院校</a>
           <small>Universities</small>
         </h3>
         <div class="instrument-view">
@@ -94,12 +94,26 @@
 
 <script>
   export default {
-    name: 'c-school',
-    props: ['item'],
+    name: 'school',
     data() {
       return {
+        item: JSON.parse(window.localStorage.getItem("school")),
         basePath: basePath,
       }
+    },
+    mounted(){
+      let speed = 10;
+      let timer = setInterval(function () {
+        this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        if (this.scrollTop > 0) {
+          this.scrollTop = (this.scrollTop - speed > 0) ? (this.scrollTop - speed) : 0;
+          speed += 20;
+          window.scrollTo(0, this.scrollTop);
+        } else {
+          clearInterval(timer);
+        }
+      }, 16);
+      window.localStorage.clear();
     }
   }
 </script>

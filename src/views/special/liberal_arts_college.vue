@@ -1,7 +1,7 @@
 <template>
 
   <!-- instruments-section -->
-  <section v-if="!detail" class="laboratory">
+  <section class="laboratory">
     <div class="inner-banner demo-2 text-center">
       <div id="breadcrumb_wrapper">
         <div class="container">
@@ -18,8 +18,8 @@
             <small>Introduction to Liberal Arts College</small>
           </h3>
           <div class="tech-accordian">
-            <el-collapse accordion class="tech-accordian">
-              <el-collapse-item name="1">
+            <el-collapse v-model="activeNames" accordion class="tech-accordian">
+              <el-collapse-item name="1" active>
                 <template slot="title">
                   <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title asd">
@@ -136,16 +136,15 @@
             <div id="parentHorizontalTab">
               <div class="resp-tabs-container hor_1">
                 <div>
-                  <div v-for="(item, index) in schoolList" :key="item.id">
-                    <div class="col-md-3 jm-item first">
+                  <div v-for="(item) in schoolList" :key="item.id">
+                    <div class="col-md-2 jm-item first" @click="doClick(item)" style="cursor: pointer">
                       <div class="jm-item-wrapper">
                         <div class="jm-item-image">
                           <img :src="basePath + '/static/images/universities/' + item.shortName +'_icon.jpg'"
                                :alt="item.name">
                           <span class="jm-item-overlay"> </span>
-                          <div class="jm-item-button"><a style="cursor: pointer" @click="doClick(item)">View</a></div>
                         </div>
-                        <div class="jm-item-title">{{item.name}}<br></div>
+                        <div class="jm-item-title">{{item.name}}</div>
                       </div>
                     </div>
                   </div>
@@ -161,8 +160,6 @@
   </section>
   <!-- //instruments-section -->
 
-  <CSchool v-else :item="school"/>
-
 </template>
 <style>
   .inner-banner {
@@ -171,18 +168,15 @@
   }
 </style>
 <script>
-  import CSchool from "../../components/School";
   import axios from 'axios'
 
   export default {
-    components: {CSchool},
     data() {
       return {
         school: '',
-        detail: false,
         schoolList: [],
         basePath: basePath,
-        activeName: '1'
+        activeNames: ['1'],
       }
     },
     mounted() {
@@ -192,19 +186,8 @@
     },
     methods: {
       doClick(item) {
-        let speed = 10;
-        let timer = setInterval(function () {
-          this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-          if (this.scrollTop > 0) {
-            this.scrollTop = (this.scrollTop - speed > 0) ? (this.scrollTop - speed) : 0;
-            speed += 20;
-            window.scrollTo(0, this.scrollTop);
-          } else {
-            clearInterval(timer);
-          }
-        }, 16)
-        this.school = item
-        this.detail = true
+        window.localStorage.setItem('school', JSON.stringify(item));
+        this.$router.push({path: '/liberal_arts_college/single'});
       }
     }
   }

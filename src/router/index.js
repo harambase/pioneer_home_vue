@@ -19,6 +19,7 @@ import Admission from '@/views/opportunity/admission_guide'
 import Opportunity from '@/views/opportunity/opportunity'
 import PBT from '@/views/special/project_based_teaching'
 import LAC from '@/views/special/liberal_arts_college'
+import Single_School from '@/views/special/Single_School'
 
 
 
@@ -99,6 +100,11 @@ const router = new Router({
           path: '/liberal_arts_college',
           name: '合作院校',
           component: LAC,
+        },
+        {
+          path: '/liberal_arts_college/single',
+          name: '合作院校',
+          component: Single_School,
         },
         {
           path: '/about',

@@ -188,6 +188,11 @@
     color: white;
   }
 
+  .el-menu--horizontal>.el-menu-item.is-active {
+    border-bottom: 2px solid #409EFF;
+    color: white;
+  }
+
   .el-menu--horizontal > .el-submenu:focus .el-submenu__title, .el-menu--horizontal > .el-submenu:hover .el-submenu__title {
     color: white;
   }
