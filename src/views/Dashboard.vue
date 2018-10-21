@@ -27,7 +27,7 @@
           <div class="col-md-4 abt-img">
             <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
           </div>
-          <div class="col-md-5 abt-dec">
+          <div class="col-md-8 abt-dec">
             <h2>刘晓伟 Mr.Liu Xiaowei <br>
               <small>校长 Principal</small>
             </h2>
@@ -43,42 +43,6 @@
               kindergartens in China. He has rich teaching and research experience from kindergarten to university. He
               is currently the principal of the Pioneer Education School.
             </p>
-          </div>
-          <div class="col-md-3 timing">
-            <div class="opening-hours">
-              <h3><i class="fa fa-clock-o"></i>学校编年史 </h3>
-              <ul>
-                <li>1998年</li>
-                <li>刘校长在北京成立“北京先锋思维教育文化有限公司”...</li>
-                <div class="clearfix"></div>
-              </ul>
-              <ul>
-                <li>2002年</li>
-                <li>刘校长在上海继续实践教育理念...</li>
-                <div class="clearfix"></div>
-              </ul>
-              <ul>
-                <li>2002年-2006年</li>
-                <li>先锋教育开始采用在线教育...</li>
-                <div class="clearfix"></div>
-              </ul>
-              <ul>
-                <li>2006年-2013年</li>
-                <li>刘校长回到成都，在家中开办私塾...</li>
-                <div class="clearfix"></div>
-              </ul>
-              <ul>
-                <li>2013年-至今</li>
-                <li>先锋教育学校拥有了校园，进入了新的阶段。</li>
-                <div class="clearfix"></div>
-              </ul>
-            </div>
-            <div class="help">
-              <a href="#/about" @click="$router.push({path:'/about'})"
-                 class="btn btn-default btn-default_2 pull-left"
-                 data-toggle="modal"
-                 data-target="#applyModal_1">阅读更多 Read More</a>
-            </div>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -102,7 +66,8 @@
                 <div class="bottom clearfix">
                   <i class="fa fa-smile-o">400</i>
                   <p class="stats-info">近20年间，超过400名先锋毕业生进入美国一流大学读书。</p>
-                  <el-button type="text" class="button" style="font-size: 16px;"
+                  <!--<br> In 20 years, over 400 graduates has been admitted into top United States Universities.-->
+                  <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/achievement'})">了解更多 Learn More
                   </el-button>
                 </div>
@@ -117,8 +82,8 @@
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
                   <i class="fa fa-smile-o">15</i>
-                  <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。</p>
-                  <el-button type="text" class="button" style="font-size: 16px;"
+                  <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br> </p>
+                  <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/about'})">了解更多 Learn More
                   </el-button>
                 </div>
@@ -134,7 +99,7 @@
                 <div class="bottom clearfix">
                   <i class="fa fa-smile-o">2</i>
                   <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。</p>
-                  <el-button type="text" class="button" style="font-size: 16px;"
+                  <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/campus'})">了解更多 Learn More
                   </el-button>
                 </div>
@@ -150,7 +115,7 @@
                 <div class="bottom clearfix">
                   <i class="fa fa-smile-o">18</i>
                   <p class="stats-info">与超过18所美国一流大学合作，并提供高额奖学金。</p>
-                  <el-button type="text" class="button" style="font-size: 16px;"
+                  <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/liberal_arts_college'})">了解更多 Learn More
                   </el-button>
                 </div>
@@ -244,7 +209,7 @@
             </el-card>
           </el-col>
         </el-row>
-        <el-row :gutter="12" class="text-justify">
+        <el-row :gutter="12" class="text-justify" style="margin-top: 10px">
           <el-col :span="6">
             <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
                      onclick="window.open('http://www.chinanews.com/edu/dxxy/news/2008/03-18/1195395.shtml')">

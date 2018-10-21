@@ -47,11 +47,11 @@
                   <small>Universities</small>
                 </p>
               </el-menu-item>
-              <el-menu-item index="/study_by_travel">
-                <p>游学项目
-                  <small>Study By Trave</small>
-                </p>
-              </el-menu-item>
+              <!--<el-menu-item index="/study_by_travel">-->
+                <!--<p>游学项目-->
+                  <!--<small>Study By Trave</small>-->
+                <!--</p>-->
+              <!--</el-menu-item>-->
               <el-menu-item index="/project_based_teaching">
                 <p>项目式教学
                   <small>Project-based Learning</small>
