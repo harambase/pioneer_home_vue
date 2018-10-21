@@ -195,11 +195,68 @@
     <!-- news letter -->
     <div class="subscribe text-center">
       <div class="container">
-        <h3>媒体报道 Pioneer on Media</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s. Contrary to popular belief, Lorem Ipsum is not simply
-          random text. It has roots in a piece of classical Latin literature.</p>
-
+        <div class="news-section-head text-center">
+          <h3>媒体报道 Media Coverage</h3>
+        </div>
+        <el-row :gutter="12" class="text-justify">
+          <el-col :span="6">
+            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+                     onclick="window.open('http://edu.newssc.org/system/20170605/002194184.htm')">
+              <div class="ser-img">
+                <img src="images/media/sichuannews.jpg" title="service" alt="" class="image"/>
+              </div>
+              <div style="padding: 14px;">
+                <span>“新学习革命”是怎样的革命？看2017国际素质教育沙龙成都站如何诠释</span>
+              </div>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+                     onclick="window.open('https://www.sohu.com/a/126938983_508606')">
+              <div class="ser-img">
+                <img src="images/media/sohu.jpg" title="service" alt="" class="image"/>
+              </div>
+              <div style="padding: 14px;">
+                <span>【小微学校观察】 | 几只“气球”的出走——记成都先锋学校</span>
+              </div>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+                     onclick="window.open('http://www.cultureopen.asia/2017/05/26/%E9%87%87%E8%AE%BF-%E5%BE%AE%E5%9E%8B%E5%AD%A6%E6%A0%A1%E5%85%88%E9%94%8B%E5%AD%A6%E6%A0%A1%E5%88%98%E6%99%93%E4%BC%9F%E6%A0%A1%E9%95%BF-%E5%AF%BB%E6%89%BE%E5%B9%B8%E7%A6%8F/')">
+              <div class="ser-img">
+                <img src="images/media/coa-logo.jpg" title="service" alt="" class="image"/>
+              </div>
+              <div style="padding: 14px;">
+                <span>【采访-微型学校‘先锋学校’刘晓伟校长】 寻找幸福·自由的学生们… “这才是真正的教育”</span>
+              </div>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+                     onclick="window.open('https://v.qq.com/x/page/a0714zwi2xv.html')">
+              <div class="ser-img">
+                <img src="images/media/cgtn.jpg" title="service" alt="" class="image"/>
+              </div>
+              <div style="padding: 14px;">
+                <span>TV Program - Better Education <br> 电视节目-更好的教育</span>
+              </div>
+            </el-card>
+          </el-col>
+        </el-row>
+        <el-row :gutter="12" class="text-justify">
+          <el-col :span="6">
+            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+                     onclick="window.open('http://www.chinanews.com/edu/dxxy/news/2008/03-18/1195395.shtml')">
+              <div class="ser-img">
+                <img src="images/media/chinanews.jpg" title="service" alt="" class="image"/>
+              </div>
+              <div style="padding: 14px;">
+                <span>高二退学读“私塾” 成都男生走出另类成才路</span>
+              </div>
+            </el-card>
+          </el-col>
+        </el-row>
       </div>
     </div>
   </div>
