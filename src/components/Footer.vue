@@ -6,16 +6,17 @@
       <div class="container">
         <div class="footer-grids">
           <div class="col-md-4 footer-grid-left">
-            <h3>先锋教育微信公众号
-              <small>WeChat Official Account</small>
+            <h3>微信公众号
+              <small>WeChat Account</small>
             </h3>
-            <img style="width: 200px; height: 200px;" :src=" basePath + '/static/images/weChat.jpg'"/>
+            <img style="width: 180px; height: 180px; left: 100px" :src=" basePath + '/static/images/weChat.jpg'"/>
           </div>
           <div class="col-md-4 footer-grid-left">
             <h3>联系信息
               <small>Contact Information</small>
             </h3>
             <ul>
+              <icon ></icon>
               <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>成都市新都区斑竹园镇北欧知识城云兴路8号</li>
               <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+028 83964698</li>
               <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>17780622519</li>
@@ -51,6 +52,15 @@
     </div>
   </footer>
 </template>
+
+<style>
+  p {
+    margin: 0px;
+    padding: 0px 0 0px 0;
+    line-height: 15px;
+    font-weight: 600;
+  }
+</style>
 <script>
   export default {
     name: 'c-footer',

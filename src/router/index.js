@@ -6,6 +6,7 @@ import Full from '@/containers/Full'
 
 // Views
 import Dashboard from '@/views/Dashboard'
+import About from '@/views/about'
 import Organization from '@/views/organization/organization'
 import Wechat from '@/views/news/wechat'
 import Faculty from '@/views/organization/faculty_staff'
@@ -18,6 +19,7 @@ import Admission from '@/views/opportunity/admission_guide'
 import Opportunity from '@/views/opportunity/opportunity'
 import PBT from '@/views/special/project_based_teaching'
 import LAC from '@/views/special/liberal_arts_college'
+
 
 
 Vue.use(Router);
@@ -97,6 +99,11 @@ const router = new Router({
           path: '/liberal_arts_college',
           name: '合作院校',
           component: LAC,
+        },
+        {
+          path: '/about',
+          name: '关于学校',
+          component: About,
         },
       ]
     },

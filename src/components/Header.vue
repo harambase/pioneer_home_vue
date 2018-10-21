@@ -217,7 +217,7 @@
   .el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
     outline: 0;
     color: white;
-    background: rgb(55, 55, 55);
+    background: black;
   }
 
   .el-menu--popup-bottom-start {

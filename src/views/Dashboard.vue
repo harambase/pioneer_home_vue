@@ -23,21 +23,23 @@
       <!-- banner-bottom -->
       <div class="banner-bottom">
         <div class="container">
-          <h3 class="title text-center" style="padding-bottom: 10px;">关于学校 About us</h3>
+          <h3 class="title text-center" style="padding-bottom: 10px;">先锋创始人 Initiative</h3>
           <div class="row">
             <div class="col-md-4 abt-img">
               <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
             </div>
-            <div class="col-md-4 abt-dec">
-              <h2>刘晓伟
-                <small>校长</small>
+            <div class="col-md-5 abt-dec">
+              <h2>刘晓伟 Mr.Liu Xiaowei <br>
+                <small>校长 Principal</small>
               </h2>
               <p class="diff">一级导师、先锋教育创始人、青少年和儿童早期教育专家、美国弗吉尼亚大学教育心理学硕士、国家心理咨询师</p>
-              <p>
-                刘晓伟先生曾执教于四川大学，担任过北京先锋思维教育文化研究中心主任、美国教育资源文化研究中心主任、美国犹他州政府驻北京商务代表处首席代表、美国多飞公司教育顾问、上海市教委教改《信息科技》教材顾问。最早在中国幼儿园开展英语、信息科技和项目教学，有从幼儿园到大学各年龄段丰富的教研和教学经验。现任先锋教育学校校长。</p>
-
+              <p style="margin-top: -20px; text-align: justify;">
+                刘晓伟先生曾执教于四川大学，担任过北京先锋思维教育文化研究中心主任、美国教育资源文化研究中心主任、美国犹他州政府驻北京商务代表处首席代表、美国多飞公司教育顾问、上海市教委教改《信息科技》教材顾问。最早在中国幼儿园开展英语、信息科技和项目教学，有从幼儿园到大学各年龄段丰富的教研和教学经验。现任先锋教育学校校长。
+              <br>
+                Mr. Liu Xiaowei taught at Sichuan University and served as Director of the Beijing Pioneer Thinking Education and Culture Research Center, Director of the American Educational Resources and Culture Research Center, Chief Representative of the Utah Government Business Office in Beijing, Education Co., Ltd. of the American Dove Company, and Education Reform of the Shanghai Education Commission. Information Technology textbook consultant. He has been teaching English projects, information technology projects in kindergartens in China. He has rich teaching and research experience from kindergarten to university. He is currently the principal of the Pioneer Education School.
+              </p>
             </div>
-            <div class="col-md-4 timing">
+            <div class="col-md-3 timing">
               <div class="opening-hours">
                 <h3><i class="fa fa-clock-o"></i>学校编年史 </h3>
                 <ul>
