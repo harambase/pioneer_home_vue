@@ -1,28 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// Containers
-import Full from '@/containers/Full'
-
-// Views
-import Dashboard from '@/views/Dashboard'
-import About from '@/views/About'
-import Organization from '@/views/organization/Organization'
-import Wechat from '@/views/news/wechat'
-import Faculty from '@/views/organization/Faculty'
-import Personnel from '@/views/organization/Personnel'
-import Login from '@/views/common/login'
-import Register from '@/views/common/register'
-import SiteMap from '@/views/common/sitemap'
-import FAQ from '@/views/contact/faq'
-import Contact from '@/views/contact/contact'
-import Admission from '@/views/opportunity/admission_guide'
-import Opportunity from '@/views/opportunity/opportunity'
-import PBT from '@/views/special/Project_Based_Teaching'
-import LAC from '@/views/special/Liberal_Arts_College'
-import Detail from '@/views/special/School_Detail'
-
-
+const Dashboard = () => import('@/views/Dashboard');
+const About = () => import('@/views/About');
+const Organization = () => import('@/views/organization/Organization');
+const Wechat = () => import('@/views/news/wechat');
+const Faculty = () => import('@/views/organization/Faculty');
+const Personnel = () => import('@/views/organization/Personnel');
+const Login = () => import('@/views/common/login');
+const Register = () => import('@/views/common/register');
+const SiteMap = () => import('@/views/common/sitemap');
+const FAQ = () => import('@/views/contact/faq');
+const Contact = () => import('@/views/contact/contact');
+const Admission = () => import('@/views/opportunity/admission_guide');
+const Opportunity = () => import('@/views/opportunity/opportunity');
+const PBT = () => import('@/views/special/Project_Based_Teaching');
+const LAC = () => import('@/views/special/Liberal_Arts_College');
+const Detail = () => import('@/views/special/School_Detail');
+const Full = () => import('@/containers/Full');
 
 Vue.use(Router);
 

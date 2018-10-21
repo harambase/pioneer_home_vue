@@ -16,7 +16,6 @@
               <small>Contact Information</small>
             </h3>
             <ul>
-              <icon ></icon>
               <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>成都市新都区斑竹园镇北欧知识城云兴路8号</li>
               <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+028 83964698</li>
               <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>17780622519</li>
