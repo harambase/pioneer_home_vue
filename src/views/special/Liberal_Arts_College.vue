@@ -187,7 +187,7 @@
     methods: {
       doClick(item) {
         window.localStorage.setItem('school', JSON.stringify(item));
-        this.$router.push({path: '/liberal_arts_college/single'});
+        this.$router.push({path: '/liberal_arts_college/detail'});
       }
     }
   }
