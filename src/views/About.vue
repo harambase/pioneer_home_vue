@@ -225,7 +225,7 @@
           </el-carousel-item>
         </el-carousel>
       </div>
-    </div><!-- // grid-gallery -->
+    </div>
   </section>
 </template>
 

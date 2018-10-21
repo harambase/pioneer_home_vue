@@ -91,9 +91,9 @@
                   <small>WeChat</small>
                 </p>
               </el-menu-item>
-              <el-menu-item index="/activity">
-                <p>学校活动
-                  <small>Activities</small>
+              <el-menu-item index="/student_passages">
+                <p>学生文章
+                  <small>Student Passages</small>
                 </p>
               </el-menu-item>
             </el-submenu>

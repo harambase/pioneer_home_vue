@@ -24,7 +24,8 @@
     "vee-validate": "^2.0.3",
     "echarts": "^4.0.4",
     "element-ui": "2.4.0",
-    "glyphicons": "0.2.0"
+    "glyphicons": "0.2.0",
+    "jwt-decode": "2.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.7",

@@ -44,16 +44,24 @@
 <script>
   import axios from 'axios'
   import md5 from 'js-md5'
+  import decode from 'jwt-decode'
+
   export default ({
     name: 'Login',
     data() {
       return {
         user: {
           username: '',
-          password: ''
+          password: '',
         },
         loginError: false,
-        basePath: basePath
+        tempToken: '',
+        reset: false,
+        showModal: false,
+        msg: '',
+        headerBgVariant: '',
+        notSame: true,
+        newPwd: ''
       }
     },
     methods: {
@@ -65,8 +73,24 @@
           loginUser.password = md5(this.user.password);
           axios.post('/system/login', loginUser).then((response) => {
             if (response.data.code === 2001) {
-              window.localStorage.setItem('access_token', response.data.data.access_token);
-              window.location.replace(basePath + '/eas')
+              if (this.user.password === md5('Pioneer123456')) {
+                this.tempToken = response.data.data.access_token;
+                this.reset = true;
+                let userId = decode(this.tempToken).sub;
+                axios.get('/system/user/verify/' + userId + '?token=' + this.tempToken).then(response => {
+                  this.user = response.data.data;
+                  this.user.password = '';
+                  this.user.qq = '';
+                  this.user.tel = '';
+                  this.user.birthday = '';
+                  this.user.email = '';
+                })
+              }
+              else {
+                window.localStorage.setItem('access_token', response.data.data.access_token);
+                token = response.data.data.access_token;
+                this.$router.push({path: '/eas#/dashboard'})
+              }
             } else {
               this.loginError = true
             }
