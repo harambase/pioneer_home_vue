@@ -38,6 +38,11 @@
   }
 </script>
 
+<style>
+  $ fa-font-path:  '~font-awesome/fonts/'  ;
+  @import '~font-awesome/css/font-awesome.min.css';
+</style>
+
 <style lang="scss">
   // Import Main styles for this application
   @import 'assets/scss/style';

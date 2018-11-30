@@ -11,7 +11,7 @@
     <!--- Faq ---->
     <div class="faq">
       <div class="container">
-        <h3 class="last-updated">Frequently Asked Question's</h3>
+        <h3 class="last-updated">常见问题解答 Frequently Asked Questions</h3>
         <dl class="faq-list">
           <dt class="faq-list_h">
             <h4 class="marker">Q?</h4>

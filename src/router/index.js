@@ -4,16 +4,18 @@ import Router from 'vue-router'
 const Dashboard = () => import('@/views/Dashboard');
 const About = () => import('@/views/About');
 const Organization = () => import('@/views/organization/Organization');
-const Wechat = () => import('@/views/news/wechat');
+const Wechat = () => import('@/views/news/Wechat');
+const Article = () => import('@/views/news/Article');
+const Single_Article = () => import('@/views/news/Single_Article');
 const Faculty = () => import('@/views/organization/Faculty');
 const Personnel = () => import('@/views/organization/Personnel');
 const Login = () => import('@/views/common/login');
 const Register = () => import('@/views/common/register');
 const SiteMap = () => import('@/views/common/sitemap');
-const FAQ = () => import('@/views/contact/faq');
-const Contact = () => import('@/views/contact/contact');
-const Admission = () => import('@/views/opportunity/admission_guide');
-const Opportunity = () => import('@/views/opportunity/opportunity');
+const FAQ = () => import('@/views/contact/FAQ');
+const Contact = () => import('@/views/contact/Contact');
+const Admission = () => import('@/views/opportunity/Admission_Guide');
+const Opportunity = () => import('@/views/opportunity/Opportunity');
 const PBT = () => import('@/views/special/Project_Based_Teaching');
 const LAC = () => import('@/views/special/Liberal_Arts_College');
 const Detail = () => import('@/views/special/School_Detail');
@@ -74,12 +76,12 @@ const router = new Router({
         },
         {
           path: '/faq',
-          name: '微信公众平台',
+          name: 'FAQ',
           component: FAQ,
         },
         {
           path: '/contact',
-          name: '微信公众平台',
+          name: '联系我们',
           component: Contact,
         },
         {
@@ -111,6 +113,16 @@ const router = new Router({
           path: '/about',
           name: '关于学校',
           component: About,
+        },
+        {
+          path: '/news/article',
+          name: '过往文章',
+          component: Article,
+        },
+        {
+          path: '/news/article/single',
+          name: '过往文章',
+          component: Single_Article,
         },
       ]
     },

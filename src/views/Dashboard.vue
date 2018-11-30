@@ -33,7 +33,8 @@
             </h2>
             <p class="diff">一级导师、先锋教育创始人、青少年和儿童早期教育专家、美国弗吉尼亚大学教育心理学硕士、国家心理咨询师</p>
             <p style="margin-top: -20px; text-align: justify;">
-              刘晓伟先生曾执教于四川大学，担任过北京先锋思维教育文化研究中心主任、美国教育资源文化研究中心主任、美国犹他州政府驻北京商务代表处首席代表、美国多飞公司教育顾问、上海市教委教改《信息科技》教材顾问。最早在中国幼儿园开展英语、信息科技和项目教学，有从幼儿园到大学各年龄段丰富的教研和教学经验。现任先锋教育学校校长。
+              刘晓伟先生曾执教于四川大学，担任过北京先锋思维教育文化研究中心主任、美国教育资源文化研究中心主任、
+              美国犹他州政府驻北京商务代表处首席代表、美国多飞公司教育顾问、上海市教委教改《信息科技》教材顾问。最早在中国幼儿园开展英语、信息科技和项目教学，有从幼儿园到大学各年龄段丰富的教研和教学经验。现任先锋教育学校校长。
               <br>
               Mr. Liu Xiaowei taught at Sichuan University and served as Director of the Beijing Pioneer Thinking
               Education and Culture Research Center, Director of the American Educational Resources and Culture Research
@@ -64,7 +65,7 @@
               </div>
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
-                  <i class="fa fa-smile-o">400</i>
+                  <i class="fa">400</i>
                   <p class="stats-info">近20年间，超过400名先锋毕业生进入美国一流大学读书。</p>
                   <!--<br> In 20 years, over 400 graduates has been admitted into top United States Universities.-->
                   <el-button type="primary" round class="button" style="font-size: 16px;"
@@ -81,7 +82,7 @@
               </div>
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
-                  <i class="fa fa-smile-o">15</i>
+                  <i class="fa">15</i>
                   <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br> </p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/about'})">了解更多 Learn More
@@ -97,7 +98,7 @@
               </div>
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
-                  <i class="fa fa-smile-o">2</i>
+                  <i class="fa">2</i>
                   <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。</p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/campus'})">了解更多 Learn More
@@ -113,7 +114,7 @@
               </div>
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
-                  <i class="fa fa-smile-o">18</i>
+                  <i class="fa">18</i>
                   <p class="stats-info">与超过18所美国一流大学合作，并提供高额奖学金。</p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/liberal_arts_college'})">了解更多 Learn More
