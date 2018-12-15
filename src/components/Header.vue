@@ -16,11 +16,11 @@
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-2">
-            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/site_map"
-                                                      @click="$router.push({path:'/site_map'})">网站地图|&nbsp;Site
-            Map</a><br>
-            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444; text-decoration: none;" href="#/login"
-                                                     @click="$router.push({path:'/login'})">登录EAS|&nbsp;Login EAS</a>
+            <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444;" href="#/site_map"
+                                                      @click="$router.push({path:'/site_map'})"><strong>网站地图 |&nbsp;SiteMap</strong>
+            </a><br>
+            <i class="fa fa-user">&nbsp;&nbsp;</i><a style="color: #444444;" href="#/login"
+                                                     @click="$router.push({path:'/login'})"><strong>登录 | Login EAS</strong></a>
           </div>
         </div>
       </div>

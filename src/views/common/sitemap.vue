@@ -11,7 +11,7 @@
     <!--- sitemap ---->
     <div class="sitemap">
       <div class="container">
-        <h3 class="last-updated">先锋官网网站地图|Sitemap</h3>
+        <h3 class="last-updated">先锋网站地图|Sitemap</h3>
         <div class="col-md-4 sitemap-grid">
           <h4>关于我们</h4>
           <ul>
