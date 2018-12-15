@@ -32,7 +32,7 @@
                     <h4 class="panel-title asd">
                       <span>&#8594;</span>
                       <a class="pa_italic">
-                        <label class="horse1">建校历史 What Is Project Based Teaching</label>
+                        <label class="horse1">建校历史 History</label>
                       </a>
                     </h4>
                   </div>

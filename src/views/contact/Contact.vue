@@ -17,43 +17,6 @@
             <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
           </div>
         </div>
-        <div class="address">
-          <div class="row">
-            <div class="contact-infom">
-              <h4>联系信息 CONTACT INFO</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 location">
-              <hr/>
-              <h4>先锋教育微信公众号</h4>
-              <img style="width: 200px; height: 200px;" :src="basePath + '/static/images/weChat.jpg'"/>
-            </div>
-
-            <div class="col-md-4 location">
-              <hr/>
-              <h4>联系方式 :</h4>
-              <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>成都市新都区斑竹园镇北欧知识城云兴路8号 </p>
-              <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+028 83964698</p>
-              <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>17780622519</p>
-              <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="875699924@qq.com">875699924@qq.com</a>
-              </p>
-              <p><span><i class="fa fa-qq"></i></span><a href="//wpa.qq.com/msgrd?v=3&uin=821978672&site=qq&menu=yes">点击联系桔子老师</a>
-              </p>
-              <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>如果您想参观学校，请提前三日联系我们。</p>
-            </div>
-            <div class="col-md-4 location">
-              <hr/>
-              <h4>先锋教育学校简介</h4>
-              <p>先锋教育学校是民间小型个性化教育机构。学校以学会做人、学会思考、学会学习、学会交流、学会合作
-                (Good Character、Critical Thinking、Life-long Learning、Communication & Collaboration)
-                之“五会”作为教育目标，采用了问题式教学、项目式教学、学生自治、导师制等个性化教育方式来帮助学生调动主动学习的求知欲，
-                让学生通过丰富的创造力和审辩思维去探究并面对现实和未来生活。10年间，这所微小学校有300余名学生考入全美排名前100的大学。
-                <i>- The Entire Pioneer Team</i></p>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

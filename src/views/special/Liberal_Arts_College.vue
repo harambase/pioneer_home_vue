@@ -161,12 +161,6 @@
   <!-- //instruments-section -->
 
 </template>
-<style>
-  .inner-banner {
-    background: url("../../../public/images/5hui/5.jpg") no-repeat center;
-    background-size: cover;
-  }
-</style>
 <script>
   import axios from 'axios'
 

@@ -16,34 +16,39 @@
         <div class="sl-slider">
         </div><!-- /sl-slider -->
       </div><!-- /slider-wrapper -->
-
     </div>
 
     <!-- banner-bottom -->
     <div class="banner-bottom">
       <div class="container">
-        <h3 class="title text-center" style="padding-bottom: 10px;">先锋创始人 Initiative</h3>
+        <h3 class="title text-center" style="padding-bottom: 10px;">校长寄语 The principal's note</h3>
         <div class="row">
           <div class="col-md-4 abt-img">
             <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
           </div>
           <div class="col-md-8 abt-dec">
-            <h2>刘晓伟 Mr.Liu Xiaowei <br>
-              <small>校长 Principal</small>
+            <h2>刘晓伟 <br>
+              <small>Mr.Liu Xiaowei</small>
             </h2>
             <p class="diff">一级导师、先锋教育创始人、青少年和儿童早期教育专家、美国弗吉尼亚大学教育心理学硕士、国家心理咨询师</p>
             <p style="margin-top: -20px; text-align: justify;">
-              先锋现代私塾已走过十年历程，因其先锋的教育理念和非常的教育方式而引起家长和媒体的特别关注。如今从先锋走出国门的学子有的已在全球最知名的学府如耶鲁大学和哥伦比亚大学毕业，有的已就职于国际知名大公司并在各行各业渐露头角，跃跃欲试。十年前人们对年轻学子出国留学的种种质疑已经被滚滚留学潮所淹没。为了让更多的家长和孩子从先锋教育中受益，我们将先锋教育特有的教育模式从家庭学校转型为实体学校。实体学校仍然秉承先锋教育一贯的导师制，旨在让每一个特别的学子都能得到特别的关注，走出自己非常的成材之路。
-
-                  先锋教育是着眼于孩子的未来，因此迥异于急功近利的常规教育模式。我们相信，孩子的身心健康和良好的未来发展才是我们家庭幸福的源泉。在日新月异的信息时代，如果我们今天不生活在将来，将来我们就只能生活在过去。愿我们的孩子、家长和我们一起，携手为孩子创造一个光明的未来。
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 先锋教育已走过十年历程，因其先锋的教育理念和非常的教育方式而引起家长和媒体的特别关注。如今从先锋走出国门的学子有的已在全球最知名的学府如耶鲁大学和哥伦比亚大学毕业，有的已就职于国际知名大公司并在各行各业渐露头角，跃跃欲试。
+              十年前人们对年轻学子出国留学的种种质疑已经被滚滚留学潮所淹没。为了让更多的家长和孩子从先锋教育中受益，我们将先锋教育特有的教育模式从家庭学校转型为实体学校。实体学校仍然秉承先锋教育一贯的导师制，旨在让每一个特别的学子都能得到特别的关注，走出自己非常的成材之路。
+              先锋教育是着眼于孩子的未来，因此迥异于急功近利的常规教育模式。我们相信，孩子的身心健康和良好的未来发展才是我们家庭幸福的源泉。在日新月异的信息时代，如果我们今天不生活在将来，将来我们就只能生活在过去。愿我们的孩子、家长和我们一起，携手为孩子创造一个光明的未来。
               <br>
-              Mr. Liu Xiaowei taught at Sichuan University and served as Director of the Beijing Pioneer Thinking
-              Education and Culture Research Center, Director of the American Educational Resources and Culture Research
-              Center, Chief Representative of the Utah Government Business Office in Beijing, Education Co., Ltd. of the
-              American Dove Company, and Education Reform of the Shanghai Education Commission. Information Technology
-              textbook consultant. He has been teaching English projects, information technology projects in
-              kindergartens in China. He has rich teaching and research experience from kindergarten to university. He
-              is currently the principal of the Pioneer Education School.
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Pioneer education has gone through a decade, and it has attracted attention from parents and the media because of
+              its pioneering educational philosophy and methods. Nowadays, some of the students who have gone abroad from the Pioneer
+              have graduated from the most famous universities in the world, such as Yale University and Columbia
+              University. Some of them have already worked in internationally companies and are eager to try in various industries.
+              Ten years ago, people’s doubts about young students studying abroad have been overwhelmed by the tide of studying abroad.
+              In order to allow more parents and children to benefit from Pioneers, we have transformed the
+              unique education model of Pioneer education from a family school to a physical school.
+              Entity schools still adhere to the consistent mentoring system of Pioneer education, aiming to make
+              every student get attention he/she needs and find his/her own path to success.
+              Pioneer education is aimed at the future of children, so it is different from the regular education model
+              of quick success. We believe that the child's physical and mental health and good future development are the source of happiness for our family.
+              In the ever-changing information age, if we do not live in the future today, we will only live in the past. May our children, parents and us
+              work together to create a bright future for our children.
             </p>
           </div>
           <div class="clearfix"></div>
@@ -84,7 +89,7 @@
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
                   <i class="fa">15</i>
-                  <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br> </p>
+                  <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br></p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/about'})">了解更多 Learn More
                   </el-button>
@@ -389,8 +394,8 @@
         items: [
           {
             id: 1,
-            title: '学会做人 Good Character',
-            description: '关于爱、包容、尊重的良好品格',
+            title: '学会做人',
+            description: 'Good Character',
             pic: '/public/images/2.jpg'
           },
           {
