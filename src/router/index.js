@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const Dashboard = () => import('@/views/Dashboard');
+const Course = () => import('@/views/Course');
 const About = () => import('@/views/About');
 const Organization = () => import('@/views/organization/Organization');
 const Wechat = () => import('@/views/news/Wechat');
@@ -38,6 +39,11 @@ const router = new Router({
           path: 'dashboard',
           name: '主页',
           component: Dashboard,
+        },
+        {
+          path: 'course',
+          name: '教学实践',
+          component: Course,
         },
         {
           path: 'organization',

@@ -3,7 +3,7 @@
     <div class="inner-banner demo-2 text-center">
       <div id="breadcrumb_wrapper">
         <div class="container">
-          <h2>Opportunity</h2>
+          <h2>Recruitment Brochure</h2>
           <h6>先锋教育学校招聘简章</h6>
         </div>
       </div>
@@ -11,7 +11,7 @@
     <div class="instrument">
       <div class="container">
         <h3 class="last-updated"> 先锋教育学校招聘简章
-          <small> Opportunity</small>
+          <small> Recruitment Brochure</small>
         </h3>
         <div class="instrument-view">
           <div class="row">
@@ -133,12 +133,12 @@
             <div class="col-md-7">
               <div class="row">
                 <div class="abt-dec">
-                  <h2 style="text-align: center">成都先锋教育学校招聘简章 Career Opportunities</h2>
+                  <h2 style="text-align: center">成都先锋教育学校招聘简章 Recruitment Brochure</h2>
                 </div>
               </div>
               <div class="technologies tech-accordian" style="width:80%; border: 6px solid #eee">
-              <div class="row">
-                  <h3 style="text-align: center; margin: -5%">招聘岗位 Career Opportunities</h3>
+                <div class="row">
+                  <h3 style="text-align: center; margin: -5%">招聘岗位 Positions</h3>
                   <div class="col-lg-1"></div>
                   <div class="col-lg-10">
                     <el-collapse accordion>
@@ -254,7 +254,7 @@
                 <p class="diff">
                   Aha社会创新学院的创始人顾远老师2016年在北京大学演讲时说——我们的教育是在用19世纪的体制，教20世纪的知识，应对21世纪的挑战。在同样的时间，同样的地点，用同样的方式教授同样的知识，流水线生产产品的工作方式用在了学生的教育上，这种方式能够让学生应对21世纪的挑战吗？答案是显而易见的。那么，能够让学生应对21世纪的挑战的教育应该是什么样的？先锋教育学校通过十多年前对这些问题的思考而探索出了自己的答案。</p>
                 <p>
-                   首先，它应该是高度个性化的，在基于个体差异的情况下，支持每一个人用TA所适合的方式成为他自己。先锋的核心教育制度是导师制，而先锋的导师并不是一种权威的角色。他最重要的工作是基于自己的专业背景，愿意倾听、尊重并理解每一个他所带领的孩子。通过与孩子建立友善的关系，支持他继续探究并让孩子获得成长。</p>
+                  首先，它应该是高度个性化的，在基于个体差异的情况下，支持每一个人用TA所适合的方式成为他自己。先锋的核心教育制度是导师制，而先锋的导师并不是一种权威的角色。他最重要的工作是基于自己的专业背景，愿意倾听、尊重并理解每一个他所带领的孩子。通过与孩子建立友善的关系，支持他继续探究并让孩子获得成长。</p>
                 <p>其次，支持每一个人成为他自己，离不开自由和信任：</p>
                 <p><strong>1、</strong>自由让多元存在，为不同的人成为不同的自己提供了应有的土壤，在这里没有必修课。除此以外，学校最丰富的学习是每个学生自己正在自主探究的项目。它可以是有关活动设计的诸如散学典礼策划、圣诞party策划；它亦可以是蕴含在朴素生活之中的诸如装卸衣架、寝室卫生打扫；它还可以是具有哲学意味的思考诸如“我是谁？”
                   、“我与父母的关系如何？”、“我为什么待人冷漠而生硬？”。<strong>每一件事情，每一个问题都可以成为这里的学习内容，并通过导师的带领，让每一个孩子学会做人、学会思考、学会学习、学会沟通、学会合作。</strong>

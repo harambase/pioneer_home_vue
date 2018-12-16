@@ -1528,9 +1528,93 @@ div#map iframe {
   z-index: 9999;
 }
 
+.demo-2 .el-carousel__item:nth-child(3) {
+  background: url("./assets/img/background/1.jpg") no-repeat center;
+  padding: 200px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  left: -200px;
+  /*width: 80%;*/
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.demo-2 .el-carousel__item:nth-child(4) {
+  background: url("./assets/img/background/2.jpg") no-repeat center;
+  padding: 200px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  left: -200px;
+  /*width: 80%;*/
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.demo-2 .el-carousel__item:nth-child(5) {
+  background: url("./assets/img/background/3.jpg") no-repeat center;
+  padding: 200px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  left: -200px;
+  /*width: 80%;*/
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.demo-2 .el-carousel__item:nth-child(6) {
+  background: url("./assets/img/background/4.jpg") no-repeat center;
+  padding: 200px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  left: -200px;
+  /*width: 80%;*/
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.demo-2 .el-carousel__item:nth-child(7) {
+  background: url("./assets/img/background/5.jpg") no-repeat center;
+  padding: 200px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  left: -200px;
+  /*width: 80%;*/
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.stats {
+  background: url("./assets/img/background/2.jpg") no-repeat fixed center;
+  left: -200px;
+  background-size: cover;
+  height: 850px;
+  text-align: center;
+  padding-top: 90px;
+}
+
 /*-- about-section-starts --*/
 .inner-banner {
-  background: url("/public/images/5hui/5.jpg") no-repeat center ;
+  background: url("./assets/img/background/3.jpg") no-repeat center;
   background-size: cover;
   min-height: 250px;
   padding-top: 135px;

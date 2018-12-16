@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
     <div class="demo-2">
       <div class="sl-slider-wrapper sl-slide">
-        <el-carousel height="600px">
+        <el-carousel height="600px"  style="position: relative">
           <el-carousel-item v-for="item in items" :key="item.id">
             <div class="sl-slide-inner">
               <h3>{{ item.title }}</h3>
@@ -281,89 +281,6 @@
     display: inline-block;
   }
 
-  .demo-2 .el-carousel__item:nth-child(3) {
-    background: url("../../public/images/5hui/1.jpg") no-repeat center;
-    padding: 200px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    position: absolute;
-    left: -200px;
-    /*width: 80%;*/
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
-  .demo-2 .el-carousel__item:nth-child(4) {
-    background: url("../../public/images/5hui/2.jpg") no-repeat center;
-    padding: 200px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    position: absolute;
-    left: -200px;
-    /*width: 80%;*/
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
-  .demo-2 .el-carousel__item:nth-child(5) {
-    background: url("../../public/images/5hui/3.jpg") no-repeat center;
-    padding: 200px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    position: absolute;
-    left: -200px;
-    /*width: 80%;*/
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
-  .demo-2 .el-carousel__item:nth-child(6) {
-    background: url("../../public/images/5hui/4.jpg") no-repeat center;
-    padding: 200px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    position: absolute;
-    left: -200px;
-    /*width: 80%;*/
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
-  .demo-2 .el-carousel__item:nth-child(7) {
-    background: url("../../public/images/5hui/5.jpg") no-repeat center;
-    padding: 200px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    position: absolute;
-    left: -200px;
-    /*width: 80%;*/
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
-  .stats {
-    background: url("../../public/images/5hui/2.jpg") no-repeat fixed center;
-    left: -200px;
-    background-size: cover;
-    height: 850px;
-    text-align: center;
-    padding-top: 90px;
-  }
 
   .fa {
     display: inline-block;
@@ -418,7 +335,7 @@
           },
           {
             id: 4,
-            title: '学会学习 Learn',
+            title: '学会学习 Life-Long Learn',
             description: '与各式各样的人倾听沟通相处',
             pic: '/public/images/4.jpg'
           },
