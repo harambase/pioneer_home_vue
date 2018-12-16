@@ -418,7 +418,7 @@
           },
           {
             id: 4,
-            title: '学会做人 Good Character',
+            title: '学会学习 Learn',
             description: '与各式各样的人倾听沟通相处',
             pic: '/public/images/4.jpg'
           },
