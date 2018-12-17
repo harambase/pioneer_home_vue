@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
     <div class="demo-2">
       <div class="sl-slider-wrapper sl-slide">
-        <el-carousel height="600px"  style="position: relative">
+        <el-carousel :height="bannerHeight + 'px'"  style="position: relative">
           <el-carousel-item v-for="item in items" :key="item.id">
             <div class="sl-slide-inner">
               <h3>{{ item.title }}</h3>
@@ -345,18 +345,32 @@
             description: '理解分歧、达成共识、欣赏每一个人',
             pic: '/public/images/5.jpg'
           }
-        ]
+        ],
+        bannerHeight: 0,
+        screenWidth: document.body.clientWidth
       }
     },
     mounted() {
       axios.get('/staff').then(response => {
         this.staffList = response.data;
       })
+      this.setSize();
+      window.onresize = () => {
+        return (() => {
+          window.screenWidth = document.body.clientWidth;
+          this.screenWidth = window.screenWidth
+        })()
+      };
     },
     methods: {
       doClick(item) {
         window.localStorage.setItem('personnel', JSON.stringify(item));
         this.$router.push({path: '/faculty_staff/personnel'});
+      },
+      setSize() {
+        this.bannerHeight = 740 / 2560 * this.screenWidth;
+        if(this.bannerHeight < 740) this.bannerHeight = 740;
+        if(this.bannerHeight < 360) this.bannerHeight = 360
       }
     }
   }

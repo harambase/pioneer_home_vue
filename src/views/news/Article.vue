@@ -74,7 +74,7 @@
     },
     mounted() {
       axios.get(basePath + '/article').then(response => {
-        this.articleList = response.data;
+        this.articleList = response.data.past;
       })
     },
     methods: {

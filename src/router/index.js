@@ -19,6 +19,7 @@ const Admission = () => import('@/views/opportunity/Admission_Guide');
 const Opportunity = () => import('@/views/opportunity/Opportunity');
 const PBT = () => import('@/views/special/Project_Based_Teaching');
 const LAC = () => import('@/views/special/Liberal_Arts_College');
+const DynEd = () => import('@/views/special/DynEd');
 const Detail = () => import('@/views/special/School_Detail');
 const Full = () => import('@/containers/Full');
 
@@ -44,6 +45,11 @@ const router = new Router({
           path: 'course',
           name: '教学实践',
           component: Course,
+        },
+        {
+          path: 'dyned',
+          name: '教学实践',
+          component: DynEd,
         },
         {
           path: 'organization',

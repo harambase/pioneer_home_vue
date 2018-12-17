@@ -9,26 +9,33 @@
       </div>
     </div>
     <!--- instrument ---->
-    <div class="instrument">
+    <div class="blog">
       <div class="container">
         <h3 class="last-updated"> Article
           <small>先锋资讯</small>
         </h3>
-        <div class="instrument-view">
-          <div id="detail">
-            <div class="ins-name">
-              <h3>{{item.name}} {{item.enName}}
-                <small>{{item.time}}</small>
-              </h3>
-              <p v-html='item.body'></p>
-              <p></p>
+        <div class="container">
+          <div class="single">
+            <div class="single-top">
+              <el-carousel :interval="4000" type="card" height="350px">
+                <el-carousel-item v-for="index in item.pics.length" @click="dialogVisible = true">
+                  <img :src="basePath + '/static/images/course/'+ item.pics[index-1]" alt="" style="width: 80%"/>
+                </el-carousel-item>
+              </el-carousel>
+            </div>
+            <div class="top-single">
+              <h3 style="text-align: center">{{item.name}} <br><small>{{item.enName}}</small></h3>
+              <div class="grid-single">
+                <div class="single-one"><span><i class="fa fa-calendar"></i>{{item.time}}</span></div>
+                <div class="single-one"><span><i class="fa fa-user"></i>{{item.author}}</span></div>
+                <div class="clearfix"></div>
+              </div>
+              <p class="eget" v-html='item.body'></p>
             </div>
           </div>
-          <div class="clerfix"></div>
         </div>
       </div>
     </div>
-    <!--- /instrument ---->
   </section>
 </template>
 
