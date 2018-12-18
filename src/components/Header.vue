@@ -74,11 +74,11 @@
                   <small>Faculty & Staff</small>
                 </p>
               </el-menu-item>
-              <el-menu-item index="/organization">
-                <p>组织架构
-                  <small>Organization</small>
-                </p>
-              </el-menu-item>
+              <!--<el-menu-item index="/organization">-->
+                <!--<p>组织架构-->
+                  <!--<small>Organization</small>-->
+                <!--</p>-->
+              <!--</el-menu-item>-->
             </el-submenu>
             <el-menu-item index="/news/wechat">
               <p>最新动态 <br>
@@ -96,13 +96,13 @@
                   <small>Branches</small>
                 </p>
               </template>
-              <el-menu-item index="/elementary">
-                <p>小学部
-                  <small>Elementary</small>
-                </p>
-              </el-menu-item>
+              <!--<el-menu-item index="/elementary">-->
+                <!--<p>小学部-->
+                  <!--<small>Elementary</small>-->
+                <!--</p>-->
+              <!--</el-menu-item>-->
               <el-menu-item index="7-2">
-                <a href="https://agoraacademy.cn">
+                <a style="text-decoration: none;" href="https://agoraacademy.cn">
                   <p>深圳分校
                     <small>Agora Academy</small>
                   </p>

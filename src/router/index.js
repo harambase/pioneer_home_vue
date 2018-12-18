@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Dashboard = () => import('@/views/Dashboard');
 const Course = () => import('@/views/Course');
 const About = () => import('@/views/About');
+const Achievement = () => import('@/views/Achievement');
 const Organization = () => import('@/views/organization/Organization');
 const Wechat = () => import('@/views/news/Wechat');
 const Single_Article = () => import('@/views/news/Single_Article');
@@ -41,13 +42,18 @@ const router = new Router({
           component: Dashboard,
         },
         {
+          path: 'achievement',
+          name: '教学成就',
+          component: Achievement,
+        },
+        {
           path: 'course',
           name: '教学实践',
           component: Course,
         },
         {
           path: 'dyned',
-          name: '教学实践',
+          name: 'DynEd',
           component: DynEd,
         },
         {

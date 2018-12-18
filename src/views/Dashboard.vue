@@ -23,12 +23,12 @@
       <div class="container">
         <h3 class="title text-center" style="padding-bottom: 10px;">校长寄语 The principal's note</h3>
         <div class="row">
-          <div class="col-md-4 abt-img">
+          <div class="col-md-4 ins-image">
             <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
           </div>
           <div class="col-md-8 abt-dec">
             <h2>刘晓伟 <br>
-              <small>Mr.Liu Xiaowei</small>
+              <small>Mr. Liu Xiaowei</small>
             </h2>
             <p class="diff">一级导师、先锋教育创始人、青少年和儿童早期教育专家、美国弗吉尼亚大学教育心理学硕士、国家心理咨询师</p>
             <p style="margin-top: -20px; text-align: justify;">
@@ -81,7 +81,7 @@
                   <i class="fa">400</i>
                   <p class="stats-info">近20年间，超过400名先锋毕业生进入美国一流大学读书。
                   <br> In 20 years, over 400 graduates has been admitted into top Universities.</p>
-                  <el-button type="primary" round class="button" style="font-size: 16px;" disabled
+                  <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/achievement'})">了解更多 Learn More
                   </el-button>
                 </div>
@@ -116,8 +116,7 @@
                   <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。<br>
                     The two campuses, Chengdu and Shenzhen, to see different cultures.
                   </p>
-                  <el-button type="primary" round class="button" style="font-size: 16px;" disabled
-                             @click="$router.push({path:'/campus'})">了解更多 Learn More
+                  <el-button type="primary" round class="button" style="font-size: 16px;" onclick="window.open('https://agoraacademy.cn')">了解更多 Learn More
                   </el-button>
                 </div>
               </div>

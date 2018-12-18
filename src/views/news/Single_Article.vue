@@ -37,10 +37,16 @@
               <div class="grid-single">
                 <div class="single-one"><span><i class="fa fa-calendar"></i>{{item.time}}</span></div>
                 <div class="single-one"><span><i class="fa fa-user"></i>{{item.author}}</span></div>
+                <div class="single-one"><span><i class="fa fa-user"></i>{{item.enAuthor}}</span></div>
                 <div class="clearfix"></div>
               </div>
             </div>
-            <div v-html='item.body'></div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10" v-html='item.body'>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
           </div>
         </div>
       </div>
