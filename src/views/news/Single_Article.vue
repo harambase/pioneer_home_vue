@@ -17,21 +17,30 @@
         <div class="container">
           <div class="single">
             <div class="single-top">
-              <el-carousel :interval="4000" type="card" height="350px">
+              <el-carousel :interval="4000" type="card" height="400px">
                 <el-carousel-item v-for="index in item.pics.length" @click="dialogVisible = true">
-                  <img :src="basePath + '/static/images/course/'+ item.pics[index-1]" alt="" style="width: 80%"/>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img :src="basePath + '/static/images/course/'+ item.pics[index-1].name" style="width:75%"/>
+                    </div>
+                    <div class="col-md-12">
+                      <p class="eget">{{item.pics[index-1].description}}</p>
+                    </div>
+                  </div>
                 </el-carousel-item>
               </el-carousel>
             </div>
             <div class="top-single">
-              <h3 style="text-align: center">{{item.name}} <br><small>{{item.enName}}</small></h3>
+              <h3 style="text-align: center">{{item.name}}<br>
+                <small>{{item.enName}}</small>
+              </h3>
               <div class="grid-single">
                 <div class="single-one"><span><i class="fa fa-calendar"></i>{{item.time}}</span></div>
                 <div class="single-one"><span><i class="fa fa-user"></i>{{item.author}}</span></div>
                 <div class="clearfix"></div>
               </div>
-              <p class="eget" v-html='item.body'></p>
             </div>
+            <div v-html='item.body'></div>
           </div>
         </div>
       </div>
@@ -60,7 +69,6 @@
           clearInterval(timer);
         }
       }, 16);
-      window.localStorage.clear();
     }
   }
 </script>

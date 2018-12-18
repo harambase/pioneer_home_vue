@@ -207,8 +207,8 @@
     </div>
     <div class="laboratory">
       <div class="container">
-        <h3 class="last-updated">风采
-          <small>Highlights</small>
+        <h3 class="last-updated">校园风采
+          <small>School Scenes</small>
         </h3>
         <el-carousel :interval="4000" type="card" height="550px">
           <el-carousel-item v-for="item in items" :key="item.id"

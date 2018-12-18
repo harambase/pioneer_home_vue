@@ -6,7 +6,6 @@ const Course = () => import('@/views/Course');
 const About = () => import('@/views/About');
 const Organization = () => import('@/views/organization/Organization');
 const Wechat = () => import('@/views/news/Wechat');
-const Article = () => import('@/views/news/Article');
 const Single_Article = () => import('@/views/news/Single_Article');
 const Faculty = () => import('@/views/organization/Faculty');
 const Personnel = () => import('@/views/organization/Personnel');
@@ -127,13 +126,8 @@ const router = new Router({
           component: About,
         },
         {
-          path: '/news/article',
-          name: '过往文章',
-          component: Article,
-        },
-        {
           path: '/news/article/single',
-          name: '过往文章',
+          name: '文章',
           component: Single_Article,
         },
       ]

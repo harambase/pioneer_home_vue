@@ -29,11 +29,11 @@
                 find the areas they like to go in, learn in depth, and then transfer relevant learning skills to other
                 necessary fields.
               </p>
-              <div class="technologies tech-accordian" style="border: 6px solid #eee">
+              <div class="technologies tech-accordian" style="border: 6px solid #eee; padding: 30px 0 0;">
                 <div class="row">
-                  <h3 style="text-align: center; margin: -5%">近两年课程表 Class Schedules</h3>
+                  <h3 style="text-align: center;">近两年课程表 Class Schedules</h3>
                   <div class="col-lg-1"></div>
-                  <div class="col-lg-10">
+                  <div class="col-lg-10" style="margin-top: 10px; margin-bottom: 30px">
                     <el-collapse accordion>
                       <el-collapse-item name="1">
                         <template slot="title">
@@ -123,15 +123,14 @@
                 <div class="container">
                   <div class="bolg-posts">
                     <div class="row">
-                      <div class="col-md-1"></div>
-                      <div class="col-md-10">
+                      <div class="col-md-11" style="width: 98%">
                         <el-carousel :height="bannerHeight + 'px'" trigger="click">
                           <el-carousel-item v-for="(item, index) in courseArticleList" :key="item.id"
                                             @click="dialogVisible = true">
                             <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover">
                               <div v-bind:class="{'blog-in': true, 'blog-top': true, 'blog-in1' : index%2==1}">
                                 <a @click="doClick(item)" class="blog-post">
-                                  <img :src="basePath + '/static/images/course/'+ item.pics[0]">
+                                  <img :src="basePath + '/static/images/course/'+ item.pics[0].name" height="360px"/>
                                 </a>
                                 <div class="blog-grid">
                                   <div class="date">
@@ -142,7 +141,7 @@
                                     <div class="clearfix"></div>
                                   </div>
                                   <h3>
-                                    <a @click="doClick(item)">{{item.name}} <small>{{item.enName}}</small>
+                                    <a @click="doClick(item)">{{item.name}} <br> <small style="font-weight: 600">{{item.enName}}</small>
                                     </a>
                                   </h3>
                                   <p style="letter-spacing: 0">{{item.abstract}} <br> {{item.enAbstract}}</p>
@@ -285,12 +284,13 @@
     },
     methods: {
       doClick(item) {
+        window.localStorage.clear();
         window.localStorage.setItem('article', JSON.stringify(item));
         this.$router.push({path: '/news/article/single'});
       },
       setSize() {
         this.bannerHeight = 740 / 2560 * this.screenWidth;
-        if(this.bannerHeight < 740) this.bannerHeight = 360;
+        if(this.bannerHeight < 740) this.bannerHeight = 400;
         if(this.bannerHeight < 360) this.bannerHeight = 740
       }
     }

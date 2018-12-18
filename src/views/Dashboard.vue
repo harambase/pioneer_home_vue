@@ -96,7 +96,8 @@
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
                   <i class="fa">15</i>
-                  <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br> </p>
+                  <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br>
+                    More than 15 years of educational experience.</p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/about'})">了解更多 Learn More
                   </el-button>
@@ -112,7 +113,9 @@
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
                   <i class="fa">2</i>
-                  <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。</p>
+                  <p class="stats-info">2个校区，成都、深圳可切换学习地点，看不一样的文化。<br>
+                    The two campuses, Chengdu and Shenzhen, to see different cultures.
+                  </p>
                   <el-button type="primary" round class="button" style="font-size: 16px;" disabled
                              @click="$router.push({path:'/campus'})">了解更多 Learn More
                   </el-button>
@@ -128,7 +131,9 @@
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
                   <i class="fa">18</i>
-                  <p class="stats-info">与超过18所美国一流大学合作，并提供高额奖学金。</p>
+                  <p class="stats-info">与超过18所美国一流大学合作，并提供高额奖学金。<br>
+                    Cooperate with 18+ top American universities and offer scholarships.
+                  </p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/liberal_arts_college'})">了解更多 Learn More
                   </el-button>

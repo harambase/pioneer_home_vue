@@ -80,23 +80,11 @@
                 </p>
               </el-menu-item>
             </el-submenu>
-            <el-submenu index="6">
-              <template slot="title">
-                <p>全部动态 <br>
-                  <small>Updates</small>
-                </p>
-              </template>
-              <el-menu-item index="/news/wechat">
-                <p>微信公众平台
-                  <small>WeChat</small>
-                </p>
-              </el-menu-item>
-              <el-menu-item index="/news/article">
-                <p>学校资讯
-                  <small>Articles</small>
-                </p>
-              </el-menu-item>
-            </el-submenu>
+            <el-menu-item index="/news/wechat">
+              <p>最新动态 <br>
+                <small>Updates</small>
+              </p>
+            </el-menu-item>
             <el-menu-item index="/achievement">
               <p>教学成果<br>
                 <small>Achievements</small>

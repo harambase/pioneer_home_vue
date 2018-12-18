@@ -59,8 +59,6 @@
                   </div>
                 </div>
               </el-collapse-item>
-            </el-collapse>
-            <el-collapse accordion class="tech-accordian second">
               <el-collapse-item name="2">
                 <template slot="title">
                   <div class="panel-heading" role="tab" id="headingTwo">
