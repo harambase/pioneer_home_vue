@@ -219,6 +219,7 @@
     },
     methods: {
       doClick(item) {
+        window.localStorage.clear();
         window.localStorage.setItem('personnel', JSON.stringify(item));
         this.$router.push({path: '/faculty_staff/personnel'});
       }
