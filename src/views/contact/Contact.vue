@@ -14,7 +14,7 @@
         <div class="map">
           <h4>地图信息 Map Information</h4>
           <div id="map">
-            <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
+            <div style="width:100%;height:600px;border:#ccc solid 1px;" id="dituContent"></div>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
   //创建地图函数：
   function createMap() {
     var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-    var point = new BMap.Point(104.084059, 30.815932);//定义一个中心点坐标
+    var point = new BMap.Point(104.051509, 30.54877);//定义一个中心点坐标
     map.centerAndZoom(point, 18);//设定地图的中心点和坐标并将地图显示在地图容器中
     window.map = map;//将map变量存储在全局
   }
@@ -72,6 +72,7 @@
   function setMapEvent() {
     map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
     map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+    map.enableScrollWheelZoom();//启用鼠标双击放大，默认启用(可不写)
   }
 
   //地图控件添加函数：
@@ -90,8 +91,8 @@
   //标注点数组
   var markerArr = [{
     title: "先锋教育",
-    content: "手机：17780622519<br/>固话：028－83964698<br/>电子邮箱：875699924@qq.com<br/>地址：成都市新都区斑竹园镇北欧知识城云兴路8号  ",
-    point: "104.084468|30.81494",
+    content: "手机：17780622519<br/>固话：028－83964698<br/>电子邮箱：875699924@qq.com<br/>地址：成都市武侯区天府四街仁美大源印象三栋五楼",
+    point: "104.051509|30.54877",
     isOpen: 0,
     icon: {w: 21, h: 21, l: 0, t: 0, x: 6, lb: 5}
   }

@@ -67,7 +67,7 @@
                     <h4 class="panel-title asd">
                       <span>&#8594;</span>
                       <a class="pa_italic collapsed">
-                        <label class="horse2">学校概况 Overall Of Pioneer</label>
+                        <label class="horse2">先锋社区概况 Overall Of Pioneer</label>
                       </a>
                     </h4>
                   </div>
@@ -76,7 +76,7 @@
                   <div class="panel-collapse collapse in">
                     <div class="panel-body panel_text">
                       <p>
-                        先锋教育学校位于成都市新都区斑竹园镇北欧知识城一期，风景宜人。在长期的教育实践中，先锋渐渐形成了自己的特点
+                        先锋教育社区位于成都市武侯区天府四街仁美大源，风景宜人。在长期的教育实践中，先锋渐渐形成了自己的特点
                       </p>
                       <h4>小规模、个性化教育</h4>
                       <p>

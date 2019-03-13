@@ -10,7 +10,7 @@
             <header class="logo">
               <h1>
                 <img style="margin-top: -10px; width: 50px; height:50px;" :src="basePath + '/static/images/logo.png'"/>
-                <a class="cd-logo link link--takiri" href="#" @click="$router.push({path:'/dashboard'})">先锋教育学校 <span>Pioneer Education</span></a>
+                <a class="cd-logo link link--takiri" href="#" @click="$router.push({path:'/dashboard'})">先锋教育 <span>Pioneer Education</span></a>
               </h1>
             </header>
           </div>
@@ -38,7 +38,7 @@
             </el-menu-item>
             <el-submenu index="4">
               <template slot="title">
-                <p>学校特色 <br>
+                <p>社区特色 <br>
                   <small>Specialties</small>
                 </p>
               </template>
@@ -103,7 +103,7 @@
               <!--</el-menu-item>-->
               <el-menu-item index="7-2">
                 <a style="text-decoration: none;" href="https://agoraacademy.cn">
-                  <p>深圳分校
+                  <p>深圳社区
                     <small>Agora Academy</small>
                   </p>
                 </a>
@@ -133,7 +133,7 @@
                 </p>
               </template>
               <el-menu-item index="/admission_guide">
-                <p>招生简章
+                <p>招募简章
                   <small>Admission Guide</small>
                 </p>
               </el-menu-item>

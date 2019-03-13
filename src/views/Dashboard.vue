@@ -21,7 +21,7 @@
     <!-- banner-bottom -->
     <div class="banner-bottom">
       <div class="container">
-        <h3 class="title text-center" style="padding-bottom: 10px;">校长寄语 The principal's note</h3>
+        <h3 class="title text-center" style="padding-bottom: 10px;">社区创始人寄语 The principal's note</h3>
         <div class="row">
           <div class="col-md-4 ins-image">
             <img :src=" basePath + '/static/images/organization/lxw_1.jpg'" alt="doctor" title="doctor"/>
