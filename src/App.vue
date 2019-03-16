@@ -39,7 +39,7 @@
 </script>
 
 <style>
-  $ fa-font-path:  '~font-awesome/fonts/'  ;
+  $fa-font-path:  '~font-awesome/fonts/'  ;
   @import '~font-awesome/css/font-awesome.min.css';
 </style>
 

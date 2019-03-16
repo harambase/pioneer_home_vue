@@ -71,7 +71,7 @@
           <h3>先锋特色 Specialties</h3>
         </div>
         <el-row :gutter="12">
-          <el-col :span="6">
+          <el-col :xs="12" :sm="12" :md="6" :span="6">
             <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
@@ -88,7 +88,7 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
+          <el-col :xs="12" :sm="12" :md="6" :span="6">
             <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
@@ -105,7 +105,7 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
+          <el-col :xs="12" :sm="12" :md="6" :span="6">
             <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
@@ -122,7 +122,7 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
+          <el-col :xs="12" :sm="12" :md="6" :span="6">
             <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>

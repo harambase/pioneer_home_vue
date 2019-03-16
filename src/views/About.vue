@@ -15,7 +15,9 @@
             <small>Who we are?</small>
           </h3>
           <p>
-            一个只有4个老师和21位学生的民间微型学校，却创造了10年间输送了近300名学生到全美排名前100的大学，每一年可以保送10个学生到美国大学读书的“奇迹”。宽大的草坪，典型的希腊式圆柱，两排长廊，尖屋顶，搭配着蓝天跟白云，一晃神，你会以为你身处欧洲的某所大学。有一种置身殿堂的味道，仿佛远处的尘埃都挤不进这个院子。然而身边人不断发出的“好安逸噻”会一下子把你拉回现实。
+            一个只有4个老师和21位学生的民间微型学校，却创造了10年间输送了近300名学生到全美排名前100的大学，每一年可以保送10个学生到美国大学读书的“奇迹”。
+            宽大的草坪，典型的希腊式圆柱，两排长廊，尖屋顶，搭配着蓝天跟白云，一晃神，你会以为你身处欧洲的某所大学。
+            有一种置身殿堂的味道，仿佛远处的尘埃都挤不进这个院子。然而身边人不断发出的“好安逸噻”会一下子把你拉回现实。
             <br>
             A micro-school with only 4 teachers and 21 students has sent nearly 300 students in the past 10 years to the
             top 100 universities in the United States. Each year, 10 students can be miraculously admitted into the US

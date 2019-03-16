@@ -4730,7 +4730,7 @@ ul.sub-child li a {
   display: block;
   padding: 10px 15px 10px 15px;
   margin-bottom: 20px;
-  border: 1px solid #E8AEFF;
+  border: 1px solid #4a6aad;
   font-weight: 600;
   outline: none;
   letter-spacing: 2px;
@@ -4766,7 +4766,7 @@ label.test-info {
 }
 
 .forgot {
-  margin: 10px 0 10px;
+  margin: 0 0 10px;
 }
 
 .login-form-grids input[type="submit"] {
@@ -4784,11 +4784,11 @@ label.test-info {
   -o-transition: all 333ms ease-in-out;
   -ms-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
-  margin-top: 20px;
-  background: #8F44AD;
+  margin-top: -10px;
+  background: #4a6aad;
   outline: none;
-  border: 2px solid #8F44AD;
-  width: 25%;
+  border: 2px solid #4a6aad;
+  width: 30%;
 }
 
 .login-form-grids input[type="submit"]:hover {
