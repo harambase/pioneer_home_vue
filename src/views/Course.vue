@@ -37,6 +37,23 @@
                     <el-collapse accordion>
                       <el-collapse-item name="1">
                         <template slot="title">
+                          <div class="panel-heading" role="tab">
+                            <h4 class="panel-title asd">
+                              <span>&#8594;</span>
+                              <a class="pa_italic">
+                                <label class="horse1">2019年春季课表| Spring 2019</label>
+                              </a>
+                            </h4>
+                          </div>
+                        </template>
+                        <div class="row">
+                          <div class="col-md-12 ins-image" style="margin-top: 0">
+                            <img src="../assets/img/schedule/先锋2019春季正式课表0323.jpg" title="先锋2019春季正式课程安排" alt=""/>
+                          </div>
+                        </div>
+                      </el-collapse-item>
+                      <el-collapse-item name="2">
+                        <template slot="title">
                           <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title asd">
                               <span>&#8594;</span>
@@ -48,11 +65,11 @@
                         </template>
                         <div class="row">
                           <div class="col-md-12 ins-image" style="margin-top: 0">
-                            <img src="../assets/img/schedule/先锋2018秋季正式课程安排.jpg" title="先锋2018春季正式课程安排" alt=""/>
+                            <img src="../assets/img/schedule/先锋2018秋季正式课程安排.jpg" title="先锋2018秋季正式课程安排" alt=""/>
                           </div>
                         </div>
                       </el-collapse-item>
-                      <el-collapse-item name="2">
+                      <el-collapse-item name="3">
                         <template slot="title">
                           <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title asd">
@@ -71,7 +88,7 @@
                           </div>
                         </div>
                       </el-collapse-item>
-                      <el-collapse-item name="3">
+                      <el-collapse-item name="4">
                         <template slot="title">
                           <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title asd">
@@ -86,25 +103,6 @@
                           <div class="row">
                             <div class="col-md-12 ins-image" style="margin-top: 0">
                               <img src="../assets/img/schedule/先锋2017秋季正式课程安排.jpg" title="先锋2017秋季正式课程安排" alt=""/>
-                            </div>
-                          </div>
-                        </div>
-                      </el-collapse-item>
-                      <el-collapse-item name="4">
-                        <template slot="title">
-                          <div class="panel-heading" role="tab" id="headingFour">
-                            <h4 class="panel-title asd">
-                              <span>&#8594;</span>
-                              <a class="pa_italic">
-                                <label class="horse1">2017年春季课表| Spring 2017</label>
-                              </a>
-                            </h4>
-                          </div>
-                        </template>
-                        <div class="row">
-                          <div class="row">
-                            <div class="col-md-12 ins-image" style="margin-top: 0">
-                              <img src="../assets/img/schedule/先锋2017春季正式课程安排.jpg" title="先锋2017春季正式课程安排" alt=""/>
                             </div>
                           </div>
                         </div>

@@ -92,7 +92,7 @@
           loginUser.password = md5(this.user.password);
           axios.post('/system/login', loginUser).then((response) => {
             if (response.data.code === 2001) {
-              window.open(this.basePath + '/eas#/login?token=' + response.data.data.access_token)
+              window.open(this.basePath + '/pcp#/login?token=' + response.data.data.access_token)
             } else {
               this.loginError = true
             }
@@ -110,13 +110,13 @@
         })
       },
       forget() {
-        window.open(this.basePath + '/eas#/reset')
+        window.open(this.basePath + '/pcp#/reset')
       },
       goToReg() {
         this.$router.push({path: '/register'})
       },
       resetPassword() {
-        this.$router.push({path: '/resetPassword'})
+        this.$router.push({path: '/reset'})
       }
     }
   })
