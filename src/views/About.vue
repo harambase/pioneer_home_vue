@@ -11,20 +11,14 @@
     <div class="technologies">
       <div class="container">
         <div class="row">
-          <h3 class="last-updated">关于先锋教育
-            <small>Who we are?</small>
+          <h3 class="last-updated">关于成都先锋社区
+            <small> Chengdu Pioneer Community</small>
           </h3>
           <p>
-            一个只有4个老师和21位学生的民间微型学校，却创造了10年间输送了近300名学生到全美排名前100的大学，每一年可以保送10个学生到美国大学读书的“奇迹”。
-            宽大的草坪，典型的希腊式圆柱，两排长廊，尖屋顶，搭配着蓝天跟白云，一晃神，你会以为你身处欧洲的某所大学。
-            有一种置身殿堂的味道，仿佛远处的尘埃都挤不进这个院子。然而身边人不断发出的“好安逸噻”会一下子把你拉回现实。
+            成都先锋社区成立于2012年底，是先锋教育创办的第一所实体学习社区。地处成都主城区的终身学习者社区，以1000余平米的学习生活一体化空间，真正实践着“生活即教育”。社区学习没有必修课，而是以学习者的真实兴趣为导向，利用丰富的社会资源，让学习和探索在真实世界里自然而然地发生。
+            成都社区现有10多位可深度陪伴学习者的导师与助教，可参与教学的社会导师近20位。长期开展的选修课10多门，社区成员共同发起的各类型实践项目50多个。
             <br>
-            A micro-school with only 4 teachers and 21 students has sent nearly 300 students in the past 10 years to the
-            top 100 universities in the United States. Each year, 10 students can be miraculously admitted into the US
-            University. Large lawns, typical Greek columns, two rows of promenades, pointed roofs, with blue sky and
-            white clouds, you will think that you are in a university in Europe.
-            There is a taste of being in the temple, as if the dust in the distance is not crowded into the yard.
-            However, the "good sulphur" that people around me will constantly send will bring you back to reality.
+
           </p>
           <div class="tech-accordian">
             <el-collapse v-model="activeNames" accordion class="tech-accordian">
