@@ -327,26 +327,26 @@
           },
           {
             id: 2,
-            title: '学会思考 Critical Thinking',
-            description: '勇敢说不，尤其勇敢对自己说不',
+            title: '学会思考',
+            description: 'Critical Thinking',
             pic: '/public/images/2.jpg'
           },
           {
             id: 3,
-            title: '学会交流 Communication',
-            description: '一生具备对事物好奇探索的能力',
+            title: '学会交流',
+            description: 'Communication',
             pic: '/public/images/3.jpg'
           },
           {
             id: 4,
-            title: '学会学习 Life-Long Learn',
-            description: '与各式各样的人倾听沟通相处',
+            title: '学会学习',
+            description: 'Life-Long Learning',
             pic: '/public/images/4.jpg'
           },
           {
             id: 5,
-            title: '学会合作 Collaboration',
-            description: '理解分歧、达成共识、欣赏每一个人',
+            title: '学会合作',
+            description: 'Collaboration',
             pic: '/public/images/5.jpg'
           }
         ],

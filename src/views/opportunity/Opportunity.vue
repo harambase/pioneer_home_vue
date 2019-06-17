@@ -95,7 +95,7 @@
                     <h3><i class="fa fa-phone"></i>联系我们 Contact Us</h3>
                     <ul>
                       <li><span><i class="fa fa-map-marker"></i></span></li>
-                      <li>成都市新都区斑竹园镇北欧知识城云兴路8号</li>
+                      <li>四川省成都市武侯区天府四街仁美大源印象三栋五楼</li>
                       <div class="clearfix"></div>
                     </ul>
                     <ul>

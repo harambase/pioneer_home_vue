@@ -22,12 +22,12 @@
                 <h3><i class="fa fa-info"></i>招生信息 Admission Info</h3>
                 <ul>
                   <li><span><i class="fa fa-calendar"></i></span></li>
-                  <li>春季3月1日开学，秋季9月1日开学</li>
+                  <li>春季3月1日开始，秋季9月1日开始</li>
                   <div class="clearfix"></div>
                 </ul>
                 <ul>
                   <li><span><i class="fa fa-money"></i></span></li>
-                  <li>学费及生活费: 约￥4.5万一学期（2018年）</li>
+                  <li>费用（含生活费）: 约￥4.5万一学期（2018年）</li>
                   <div class="clearfix"></div>
                 </ul>
                 <ul>
@@ -50,7 +50,7 @@
                 <h3><i class="fa fa-phone"></i>联系我们 Contact Us</h3>
                 <ul>
                   <li><span><i class="fa fa-map-marker"></i></span></li>
-                  <li>成都市新都区斑竹园镇北欧知识城云兴路8号</li>
+                  <li>四川省成都市武侯区天府四街仁美大源印象三栋五楼</li>
                   <div class="clearfix"></div>
                 </ul>
                 <ul>

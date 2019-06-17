@@ -17,7 +17,7 @@
           <ul>
             <li><span>&#62;</span><a @click="$router.push({path: '/about'})" style="cursor: pointer">关于我们 | About Us</a></li>
           </ul>
-          <h4>学校特色</h4>
+          <h4>社区特色</h4>
           <ul>
             <li><span>&#62;</span><a @click="$router.push({path: '/liberal_arts_college'})" href="#/liberal_arts_college">合作大学 | Universities</a></li>
             <li><span>&#62;</span><a @click="$router.push({path: '/dyned'})" style="cursor: pointer">英语教学系统DynEd | DynEd</a></li>
