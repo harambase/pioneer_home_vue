@@ -42,7 +42,7 @@
                   <el-tab-pane label="全部 ALL" name="first">
                     <div>
                       <div v-for="item in staffList" :key="item.id">
-                        <div v-if="item.type == 'f'" class="col-md-3 jm-item first">
+                        <div v-if="item.type == 'f'" class="col-md-2 jm-item first">
                           <div class="jm-item-wrapper">
                             <div class="jm-item-image">
                               <img v-if="item.id != 'lxw'"
@@ -65,7 +65,7 @@
                     <div>
                       <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('1')!=-1 && item.type == 'f'">
-                          <div class="col-md-3 jm-item first">
+                          <div class="col-md-2 jm-item first">
                             <div class="jm-item-wrapper">
                               <div class="jm-item-image">
                                 <img v-if="item.id != 'lxw'"
@@ -90,7 +90,7 @@
                     <div>
                       <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('2')!=-1 && item.type == 'f'">
-                          <div class="col-md-3 jm-item first">
+                          <div class="col-md-2 jm-item first">
                             <div class="jm-item-wrapper">
                               <div class="jm-item-image">
                                 <img v-if="item.id != 'lxw'"
@@ -115,7 +115,7 @@
                     <div>
                       <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('7')!=-1 && item.type == 'f'">
-                          <div class="col-md-3 jm-item first">
+                          <div class="col-md-2 jm-item first">
                             <div class="jm-item-wrapper">
                               <div class="jm-item-image">
                                 <img v-if="item.id != 'lxw'"
@@ -140,7 +140,7 @@
                     <div>
                       <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('8')!=-1 && item.type == 'f'">
-                          <div class="col-md-3 jm-item first">
+                          <div class="col-md-2 jm-item first">
                             <div class="jm-item-wrapper">
                               <div class="jm-item-image">
                                 <img v-if="item.id != 'lxw'"
@@ -165,7 +165,7 @@
                     <div>
                       <div v-for="item in staffList" :key="item.id">
                         <div v-if="item.category.indexOf('4')!=-1 && item.type == 'f'">
-                          <div class="col-md-3 jm-item first">
+                          <div class="col-md-2 jm-item first">
                             <div class="jm-item-wrapper">
                               <div class="jm-item-image">
                                 <img v-if="item.id != 'lxw'"
@@ -215,6 +215,7 @@
     mounted() {
       axios.get(this.basePath + '/staff').then(response => {
         this.staffList = response.data;
+        console.log(this.staffList)
       })
     },
     methods: {

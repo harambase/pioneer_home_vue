@@ -121,14 +121,14 @@
       id: 4,
       year: 2017,
       name: '黄XX',
-      enName: 'Chen',
+      enName: 'Huang',
       university: 'CSB|SJU',
     },
     {
       id: 10,
       year: 2013,
-      name: '林石磊',
-      enName: 'Shllei Lin',
+      name: '林XX',
+      enName: 'Lin',
       university: 'CSB|SJU',
     }
   ];
