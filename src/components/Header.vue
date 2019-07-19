@@ -63,23 +63,11 @@
                 <small>Curriculum</small>
               </p>
             </el-menu-item>
-            <el-submenu index="5">
-              <template slot="title">
-                <p>团队组织 <br>
-                  <small>Teams</small>
-                </p>
-              </template>
-              <el-menu-item index="/faculty_staff">
-                <p>教师团队
-                  <small>Faculty & Staff</small>
-                </p>
-              </el-menu-item>
-              <!--<el-menu-item index="/organization">-->
-                <!--<p>组织架构-->
-                  <!--<small>Organization</small>-->
-                <!--</p>-->
-              <!--</el-menu-item>-->
-            </el-submenu>
+            <el-menu-item index="/faculty_staff">
+              <p>教学团队 <br>
+                <small>Faculty & Staff</small>
+              </p>
+            </el-menu-item>
             <el-menu-item index="/news/wechat">
               <p>最新动态 <br>
                 <small>Updates</small>
@@ -103,7 +91,7 @@
               <!--</el-menu-item>-->
               <el-menu-item index="7-2">
                 <a style="text-decoration: none;" href="https://agoraacademy.cn">
-                  <p>深圳社区
+                  <p>深圳安格社区
                     <small>Agora Academy</small>
                   </p>
                 </a>
@@ -133,7 +121,7 @@
                 </p>
               </template>
               <el-menu-item index="/admission_guide">
-                <p>招募简章
+                <p>招生信息
                   <small>Admission Guide</small>
                 </p>
               </el-menu-item>

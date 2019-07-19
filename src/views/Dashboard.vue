@@ -2,13 +2,13 @@
   <div class="animated fadeIn">
     <div class="demo-2">
       <div class="sl-slider-wrapper sl-slide">
-        <el-carousel :height="bannerHeight + 'px'"  style="position: relative">
+        <el-carousel height="400px" style="position: relative" indicator-position="inside">
           <el-carousel-item v-for="item in items" :key="item.id">
             <div class="sl-slide-inner">
               <h3>{{ item.title }}</h3>
               <blockquote>
                 <p>{{item.description}}</p>
-                <cite>先锋教育理念 Education Principals</cite>
+                <cite>先锋教育 Pioneer Education</cite>
               </blockquote>
             </div>
           </el-carousel-item>
@@ -70,9 +70,9 @@
         <div class="news-section-head text-center">
           <h3>先锋特色 Specialties</h3>
         </div>
-        <el-row :gutter="12">
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+        <el-row :gutter="10">
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
               </div>
@@ -88,8 +88,8 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
               </div>
@@ -105,8 +105,8 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
               </div>
@@ -122,8 +122,8 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee'}" shadow="hover">
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee'}" shadow="hover">
               <div class="ser-img">
                 <img src="images/universities/SJU_1.jpg" title="合作大学" class="image"/>
               </div>
@@ -149,7 +149,7 @@
     <div class="news-section">
       <div class="container">
         <div class="news-section-head text-center">
-          <h3>先锋教师团队 Faculty & Staff</h3>
+          <h3>教学团队 <br>Faculty | Staff</h3>
         </div>
         <ul class="item-list g-clearfix" id="detail">
           <div v-for="(item) in staffList" :key="item.id">
@@ -181,8 +181,8 @@
           <h3>媒体报道 Pioneer On Media</h3>
         </div>
         <el-row :gutter="12" class="text-justify">
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee', cursor: 'pointer'}" shadow="hover"
                      onclick="window.open('http://edu.newssc.org/system/20170605/002194184.htm')">
               <div class="ser-img">
                 <img src="images/media/sichuannews.jpg" title="service" alt="" class="image"/>
@@ -192,8 +192,8 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee', cursor: 'pointer'}" shadow="hover"
                      onclick="window.open('https://www.sohu.com/a/126938983_508606')">
               <div class="ser-img">
                 <img src="images/media/sohu.jpg" title="service" alt="" class="image"/>
@@ -203,8 +203,8 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee', cursor: 'pointer'}" shadow="hover"
                      onclick="window.open('http://www.cultureopen.asia/2017/05/26/%E9%87%87%E8%AE%BF-%E5%BE%AE%E5%9E%8B%E5%AD%A6%E6%A0%A1%E5%85%88%E9%94%8B%E5%AD%A6%E6%A0%A1%E5%88%98%E6%99%93%E4%BC%9F%E6%A0%A1%E9%95%BF-%E5%AF%BB%E6%89%BE%E5%B9%B8%E7%A6%8F/')">
               <div class="ser-img">
                 <img src="images/media/coa-logo.jpg" title="service" alt="" class="image"/>
@@ -214,8 +214,8 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee', cursor: 'pointer'}" shadow="hover"
                      onclick="window.open('https://v.qq.com/x/page/a0714zwi2xv.html')">
               <div class="ser-img">
                 <img src="images/media/cgtn.jpg" title="service" alt="" class="image"/>
@@ -227,8 +227,8 @@
           </el-col>
         </el-row>
         <el-row :gutter="12" class="text-justify" style="margin-top: 10px">
-          <el-col :span="6">
-            <el-card :body-style="{ padding: '0px',  background: '#eee', cursor: 'pointer'}" shadow="hover"
+          <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
+            <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee', cursor: 'pointer'}" shadow="hover"
                      onclick="window.open('http://www.chinanews.com/edu/dxxy/news/2008/03-18/1195395.shtml')">
               <div class="ser-img">
                 <img src="images/media/chinanews.jpg" title="service" alt="" class="image"/>
@@ -246,8 +246,7 @@
 <style>
   .demo-2 .el-carousel__item h3 {
     font-size: 70px;
-    padding: 180px 30px 10px 30px;
-    width: 80%;
+    padding: 110px 30px 10px 30px;
     max-width: 960px;
     color: #fff;
     margin: 0 auto;
@@ -257,7 +256,6 @@
 
   .demo-2 .el-carousel__item blockquote {
     padding-top: 10px;
-    width: 80%;
     max-width: 960px;
     color: #fff;
     margin: 0 auto;
@@ -269,22 +267,21 @@
   }
 
   .demo-2 .el-carousel__item blockquote p {
+    padding:0;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 900;
     line-height: 30px;
     color: #fff;
   }
 
   .demo-2 .el-carousel__item blockquote cite {
-    font-size: 14px;
-    padding-top: 25px;
+    font-size: 25px;
+    padding-top: 20px;
     font-weight: 600;
     font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 5px;
     display: inline-block;
   }
-
 
   .fa {
     display: inline-block;
@@ -295,6 +292,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .el-carousel--horizontal{
+    overflow-y: hidden;
+  }
   .el-card {
     border: none;
   }
@@ -322,32 +322,27 @@
           {
             id: 1,
             title: '学会做人',
-            description: 'Good Character',
-            pic: '/public/images/2.jpg'
+            description: 'Good Character'
           },
           {
             id: 2,
             title: '学会思考',
-            description: 'Critical Thinking',
-            pic: '/public/images/2.jpg'
+            description: 'Critical Thinking'
           },
           {
             id: 3,
             title: '学会交流',
-            description: 'Communication',
-            pic: '/public/images/3.jpg'
+            description: 'Communication'
           },
           {
             id: 4,
             title: '学会学习',
-            description: 'Life-Long Learning',
-            pic: '/public/images/4.jpg'
+            description: 'Life-Long Learning'
           },
           {
             id: 5,
             title: '学会合作',
-            description: 'Collaboration',
-            pic: '/public/images/5.jpg'
+            description: 'Collaboration'
           }
         ],
         bannerHeight: 0,
