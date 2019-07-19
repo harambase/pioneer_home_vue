@@ -83,7 +83,7 @@ const router = new Router({
         },
         {
           path: 'faculty_staff/personnel',
-          name: '教师',
+          name: '教师详情',
           component: Personnel,
         },
         {
@@ -123,7 +123,7 @@ const router = new Router({
         },
         {
           path: '/liberal_arts_college/detail',
-          name: '合作院校',
+          name: '合作院校详情',
           component: Detail,
         },
         {

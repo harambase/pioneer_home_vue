@@ -15,7 +15,7 @@
         <div class="col-md-4 sitemap-grid">
           <h4>关于我们</h4>
           <ul>
-            <li><span>&#62;</span><a @click="$router.push({path: '/about'})" style="cursor: pointer">关于我们 | About Us</a></li>
+            <li><span>&#62;</span><a @click="$router.push({path: '/about'})" style="cursor: pointer">关于先锋 | About</a></li>
           </ul>
           <h4>社区特色</h4>
           <ul>
@@ -35,9 +35,9 @@
             <!--<li><span>&#62;</span><a @click="$router.push({path: '/organization'})" style="cursor: pointer">组织架构 | Organization</a></li>-->
             <li><span>&#62;</span><a @click="$router.push({path: '/faculty_staff'})" style="cursor: pointer">教师团队 | Faculty&Staff</a></li>
           </ul>
-          <h4>最新动态</h4>
+          <h4>微信平台</h4>
           <ul>
-            <li><span>&#62;</span><a @click="$router.push({path: '/wechat'})"style="cursor: pointer">最新动态 | Updates</a></li>
+            <li><span>&#62;</span><a @click="$router.push({path: '/wechat'})"style="cursor: pointer">微信平台 | Wechat</a></li>
           </ul>
           <h4>教学成果</h4>
           <ul>

@@ -70,7 +70,7 @@
         <div class="news-section-head text-center">
           <h3>先锋特色 Specialties</h3>
         </div>
-        <el-row :gutter="10">
+        <el-row :gutter="12">
           <el-col :xs="24" :sm="12" :md="9" :lg="6" :xl="6" style="margin-bottom: 10px;">
             <el-card :body-style="{ padding: '0px', margin:'-10px 0 0 0', background: '#eee'}" shadow="hover">
               <div class="ser-img">
@@ -79,7 +79,7 @@
               <div style="padding: 14px;" class="stats-grid slideanim">
                 <div class="bottom clearfix">
                   <i class="fa">400</i>
-                  <p class="stats-info">近20年间，超过400名先锋毕业生进入美国一流大学读书。
+                  <p class="stats-info">20年间，超过400名先锋毕业生进入美国一流大学读书。
                   <br> In 20 years, over 400 graduates has been admitted into top Universities.</p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/achievement'})">了解更多 Learn More
@@ -97,7 +97,7 @@
                 <div class="bottom clearfix">
                   <i class="fa">15</i>
                   <p class="stats-info">15年以上的办学经验，在创新教育领域屈指可数。<br>
-                    More than 15 years of educational experience.</p>
+                    More than 15 years of innovative education experiences.</p>
                   <el-button type="primary" round class="button" style="font-size: 16px;"
                              @click="$router.push({path:'/about'})">了解更多 Learn More
                   </el-button>

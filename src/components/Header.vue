@@ -5,8 +5,8 @@
     <nav class="navbar nav_bottom" role="navigation">
       <div class="container">
         <div class="row" style="padding: 20px 0 0;">
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4 col-lg-4"></div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
             <header class="logo">
               <h1>
                 <img style="margin-top: -10px; width: 50px; height:50px;" :src="basePath + '/static/images/logo.png'"/>
@@ -14,8 +14,8 @@
               </h1>
             </header>
           </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-2">
+          <div class="col-sm-1 col-md-1 col-lg-2"></div>
+          <div class="col-sm-3 col-md-3 col-lg-2">
             <i class="fa fa-globe">&nbsp;&nbsp;</i><a style="color: #444444;" href="#/site_map"
                                                       @click="$router.push({path:'/site_map'})"><strong>网站地图 |&nbsp;SiteMap</strong>
             </a><br>
@@ -32,8 +32,29 @@
                    :router="true"
                    @select="handleSelect">
             <el-menu-item index="/about">
-              <p>关于我们 <br>
+              <p>关于先锋 <br>
                 <small>About</small>
+              </p>
+            </el-menu-item>
+
+            <el-menu-item index="/course">
+              <p>教学实践 <br>
+                <small>Curriculum</small>
+              </p>
+            </el-menu-item>
+            <el-menu-item index="/faculty_staff">
+              <p>教学团队 <br>
+                <small>Faculty</small>
+              </p>
+            </el-menu-item>
+            <el-menu-item index="/news/wechat">
+              <p>微信平台<br>
+                <small>WeChat</small>
+              </p>
+            </el-menu-item>
+            <el-menu-item index="/achievement">
+              <p>教学成果<br>
+                <small>Achievements</small>
               </p>
             </el-menu-item>
             <el-submenu index="4">
@@ -58,26 +79,6 @@
                 </p>
               </el-menu-item>
             </el-submenu>
-            <el-menu-item index="/course">
-              <p>教学实践 <br>
-                <small>Curriculum</small>
-              </p>
-            </el-menu-item>
-            <el-menu-item index="/faculty_staff">
-              <p>教学团队 <br>
-                <small>Faculty & Staff</small>
-              </p>
-            </el-menu-item>
-            <el-menu-item index="/news/wechat">
-              <p>最新动态 <br>
-                <small>Updates</small>
-              </p>
-            </el-menu-item>
-            <el-menu-item index="/achievement">
-              <p>教学成果<br>
-                <small>Achievements</small>
-              </p>
-            </el-menu-item>
             <el-submenu index="7">
               <template slot="title">
                 <p>先锋分支 <br>
@@ -100,7 +101,7 @@
             <el-submenu index="8">
               <template slot="title">
                 <p>联系我们 <br>
-                  <small>Contact Us</small>
+                  <small>Contact Info</small>
                 </p>
               </template>
               <el-menu-item index="/faq">
@@ -117,7 +118,7 @@
             <el-submenu index="9">
               <template slot="title">
                 <p>加入先锋 <br>
-                  <small>Opportunity</small>
+                  <small>Involvement</small>
                 </p>
               </template>
               <el-menu-item index="/admission_guide">

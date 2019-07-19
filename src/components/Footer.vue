@@ -5,18 +5,18 @@
     <div class="footer" style="z-index:1">
       <div class="container">
         <div class="footer-grids">
-          <div class="col-md-4 footer-grid-left">
+          <div class="col-md-4 footer-grid-left" style="margin-bottom: 10px;">
             <h3>微信公众号
               <small><strong>WeChat Account</strong></small>
             </h3>
             <img style="width: 180px; height: 180px; left: 100px" :src=" basePath + '/static/images/weChat.jpg'"/>
           </div>
-          <div class="col-md-4 footer-grid-left">
+          <div class="col-md-4 footer-grid-left" style="margin-bottom: 10px;">
             <h3>联系信息
               <small><strong>Contact Information</strong></small>
             </h3>
             <ul>
-              <li><span><i style="margin-left: -15px; margin-right: 15px;" class="fa fa-map-marker"></i></span>成都社区：四川省成都市武侯区天府四街仁美大源印象三栋五楼</li>
+              <li><span><i style="margin-left: -15px; margin-right: 15px;" class="fa fa-map-marker"></i></span>四川省成都市武侯区天府四街仁美大源印象三栋五楼</li>
               <li><span><i style="margin-left: -15px; margin-right: 15px;" class="fa fa-phone"></i></span>座机<small>Phone</small>：(028) 83964698</li>
               <li><span><i style="margin-left: -15px; margin-right: 15px;" class="fa fa-phone-square"></i></span>电话<small>TEL</small>： 17780622519</li>
               <li><span><i style="margin-left: -15px; margin-right: 15px;" class="fa fa-wechat"></i></span>微信<small>WECHAT</small>：18328420537</li>
@@ -27,7 +27,7 @@
             </ul>
 
           </div>
-          <div class="col-md-4 footer-grid-left">
+          <div class="col-md-4 footer-grid-left" style="margin-bottom: 10px;">
             <h3>先锋教育简介
               <small><strong>Brief INTRODUCTION</strong></small>
             </h3>
@@ -38,11 +38,9 @@
           </div>
           <div class="clearfix"></div>
         </div>
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p> Copyright ©2019 成都知识城教育咨询有限公司 xianfengedu.cn 版权所有</p>
-            <p> 蜀ICP备19003079号</p>
-          </div>
+        <div class="footer-bottom" style="text-align: center; color: #ffffff; font-size: .8em;">
+            <p> ©2019 成都知识城教育咨询有限公司 xianfengedu.cn 版权所有</p>
+            <p> 蜀ICP备19003079号-1</p>
           <div class="clearfix"></div>
         </div>
       </div>

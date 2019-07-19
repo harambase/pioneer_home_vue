@@ -3192,11 +3192,11 @@ span.glyphicon.glyphicon-menu-down {
   background: rgba(0, 0, 0, 0.64);
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 30px;
-  font-weight: normal;
+  line-height: 20px;
+  font-weight: 500;
   padding: 5px 12px 6px;
   text-transform: capitalize;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
 }
 
 .jm-item-overlay {
@@ -4752,7 +4752,7 @@ label.test-info {
   border: none;
   text-transform: uppercase;
   position: relative;
-  padding: 8px 25px 6px;
+  padding: 8px 0 6px;
   font-size: 18px;
   letter-spacing: 0.1em;
   font-weight: 300;
@@ -9031,7 +9031,7 @@ label.test-info {
 
 @media (min-width: 1440px) {
   .container {
-    width: 1370px;
+    width: 1180px;
   }
 }
 
