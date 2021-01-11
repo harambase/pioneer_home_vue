@@ -11,14 +11,13 @@
 </template>
 
 <script>
-  import {Header as AppHeader, Footer as AppFooter, Breadcrumb} from '../components/'
+  import {Header as AppHeader, Footer as AppFooter} from '../components/'
 
   export default {
     name: 'full',
     components: {
       AppHeader,
-      AppFooter,
-      Breadcrumb
+      AppFooter
     },
     computed: {
       name() {
