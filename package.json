@@ -21,7 +21,7 @@
     "font-awesome": "4.7.0",
     "js-md5": "0.7.3",
     "jwt-decode": "2.2.0",
-    "vee-validate": "3.4.5",
+    "vee-validate": "2.2.15",
     "vue": "2.6.12",
     "vue-router": "3.4.9"
   },

@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import * as VeeValidate from 'vee-validate'
+import VeeValidate from 'vee-validate'
 import { extend } from 'vee-validate';
 import App from './App'
 import router from './router'
 import axios from 'axios'
 
 Vue.use(ElementUI);
-Vue.use(VeeValidate);
+Vue.use(VeeValidate, {fieldsBagName: 'formFields'});
 
 token = window.localStorage.getItem('access_token');
 
@@ -25,7 +25,7 @@ axios.interceptors.request.use(
   });
 
 
-extend('verify_password', {
+VeeValidate.Validator.extend('verify_password', {
   getMessage: field => `密码必须包含： 至少一个大写字母，一个小写字母，和一个数字`,
   validate: value => {
     let strongRegex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})');
